@@ -3,30 +3,51 @@ title: Home
 layout: home
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+# Waypoint Explorer
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+## Introduzione
 
-More specifically, the created site:
+Waypoint Explorer è un progetto nato per incentivare la visita dei punti di interesse turistici, culturali e naturalistici attraverso percorsi, con l'obiettivo di promuovere lo sviluppo del territorio e l'esercizio fisico all'aria aperta.
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+Il sistema prevede l'installazione di dispositivi in corrispondenza dei punti di interesse che si incontrano lungo il percorso. Questi dispositivi sono dotati di sensori in grado di rilevare le condizioni ambientali e mostrano un codice QR univoco che deve essere scansionato per poter procedere alla tappa successiva. I dispositivi sono progettati per funzionare in modo autonomo e con un basso consumo energetico, utilizzando eventualmente una batteria e un pannello solare. I percorsi saranno percorribili solamente a piedi, in bicicletta o con mezzi sostenibili come i monopattini elettrici, incentivando l'uso di mezzi di trasporto a basso impatto ambientale. Completando i percorsi, gli utenti saranno premiati con buoni sconto per incentivare l'uso del sistema e sostenere le attività locali.
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+Inoltre, l'amministrazione comunale avrà la possibilità di raccogliere informazioni sul territorio attraverso i sensori dei dispositivi, fornendo dati utili per la gestione dell'area e la pianificazione delle attività turistiche. Grazie alla sua scalabilità e alla sua flessibilità, il sistema potrà essere facilmente esteso e adattato alle esigenze specifiche di ogni territorio.
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+Daniele Gambaletta - daniele.gambaletta@studio.unibo.it - 0000924643\
+Riccardo Omiccioli - riccardo.omiccioli@studio.unibo.it - 0001054475\
+Cecilia Teodorani - cecilia.teodorani@studio.unibo.it - 0001032918
 
-To get started with creating a site, just click "[use this template]"!
+---
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+## Analisi del Dominio
+  ### Knowledge Crunching
+  #### Intervista con il committente
+  #### Diagrammi dei casi d'uso
+  #### Diagrammi delle attività
+  #### Domain storytelling
+  #### Mock-up
+  ### Sottodomini
+  ### Ubiquitous Language
 
-----
+## Requisiti
+  ### Requisiti di Business
+    quello che vuole il comune committente
+    caratteristiche che il sistema dovrà possedere per essere corretto
+  ### Requisiti Utente
+    funzionalita' viste dall'utente e user stories
+  ### Requisiti Funzionali
+  ### Requisiti non Funzionali
+  ### Requisiti Implementativi
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+## Design Architetturale
+  ### Bounded Context
+  ### Context Map
+  ### Architettura di Dettaglio
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+## Processo di Sviluppo
+
+## DevOps
+
+## Implementazione
+  ### Dettagli Implementativi
+  ### Deployment
