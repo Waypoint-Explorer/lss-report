@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='8 98 468 240' xmlns:xlink='http://www.w3.org/1999/xlink' width='468.0px' font-size='13' font-family='Arial, LiberationSans' version='1.1' height='240.0px'>
+  <defs>
+<style type='text/css'><![CDATA[svg text {text-rendering: geometricPrecision;}]]></style>    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='9936d4f7-6193-4e07-bcb1-26577df327a6' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='51444f47-ebab-4e9a-b534-ab167e3dfbaa' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='00284fc8-54f2-4fad-80bc-84f2b2560a7a' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+    <linearGradient y1='0.0%' x1='0.0%' y2='100.0%' x2='0.0%' id='1a43b4f4-42e2-4fd1-b6d3-dcf8df400904' spreadMethod='pad'>
+      <stop stop-opacity='1' offset='0' stop-color='rgb(255, 255, 255)'/>
+      <stop stop-opacity='1' offset='100' stop-color='rgb(238, 238, 238)'/>
+    </linearGradient>
+  </defs>
+  <desc>UsecaseDiagram</desc>
+  <g transform='translate(41.0,128.0)' id='_ic37rdZZEDuf5MDLSsXZ8Q'>
+    <circle r='6.5' cx='20.0' cy='8.5' stroke-width='1.5' fill='rgb(255, 255, 255)' stroke='rgb(136, 136, 136)' look='allInOne'/>
+    <line y1='15.0' x1='20.0' y2='45.5' x2='20.0' stroke-width='1.5' fill='rgb(255, 255, 255)' stroke='rgb(136, 136, 136)' look='allInOne'/>
+    <line y1='26.0' x1='6.0' y2='26.0' x2='34.0' stroke-width='1.5' fill='rgb(255, 255, 255)' stroke='rgb(136, 136, 136)' look='allInOne'/>
+    <line y1='45.5' x1='20.0' y2='63.0' x2='9.2' stroke-width='1.5' fill='rgb(255, 255, 255)' stroke='rgb(136, 136, 136)' look='allInOne'/>
+    <line y1='45.5' x1='20.0' y2='63.0' x2='30.799999999999997' fill='rgb(255, 255, 255)' stroke='rgb(136, 136, 136)' look='allInOne'/>
+    <text text-anchor='middle' x='20.0' y='78.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>Sensore</text>
+  </g>
+  <g transform='translate(41.0,228.0)' id='_ic37rtZZEDuf5MDLSsXZ8Q'>
+    <circle r='6.5' cx='20.0' cy='8.5' stroke-width='1.5' fill='rgb(255, 255, 255)' stroke='rgb(136, 136, 136)' look='allInOne'/>
+    <line y1='15.0' x1='20.0' y2='45.5' x2='20.0' stroke-width='1.5' fill='rgb(255, 255, 255)' stroke='rgb(136, 136, 136)' look='allInOne'/>
+    <line y1='26.0' x1='6.0' y2='26.0' x2='34.0' stroke-width='1.5' fill='rgb(255, 255, 255)' stroke='rgb(136, 136, 136)' look='allInOne'/>
+    <line y1='45.5' x1='20.0' y2='63.0' x2='9.2' stroke-width='1.5' fill='rgb(255, 255, 255)' stroke='rgb(136, 136, 136)' look='allInOne'/>
+    <line y1='45.5' x1='20.0' y2='63.0' x2='30.799999999999997' fill='rgb(255, 255, 255)' stroke='rgb(136, 136, 136)' look='allInOne'/>
+    <text text-anchor='middle' x='20.0' y='78.0' font-size='13' font-style='normal' fill='rgb(0, 0, 0)'>Display</text>
+  </g>
+  <g transform='translate(216.0,141.0)' id='_ic37r9ZZEDuf5MDLSsXZ8Q'>
+    <ellipse cx='115.0' cy='27.5' rx='115.0' ry='27.5' stroke-width='1.0' fill='url(#9936d4f7-6193-4e07-bcb1-26577df327a6)' stroke='rgb(187, 187, 187)' look='allInOne'/>
+    <g transform='translate(0.0,21.0)'>
+      <g transform='translate(0.0,0.0)'>
+        <text font-weight='bold' text-anchor='middle' x='115.0' y='13.0' font-size='13' fill='rgb(3, 54, 86)'>Raccoglie dati ambientali</text>
+      </g>
+    </g>
+  </g>
+  <g transform='translate(216.0,241.0)' id='_ic37sNZZEDuf5MDLSsXZ8Q'>
+    <ellipse cx='115.0' cy='27.5' rx='115.0' ry='27.5' stroke-width='1.0' fill='url(#51444f47-ebab-4e9a-b534-ab167e3dfbaa)' stroke='rgb(187, 187, 187)' look='allInOne'/>
+    <g transform='translate(0.0,21.0)'>
+      <g transform='translate(0.0,0.0)'>
+        <text font-weight='bold' text-anchor='middle' x='115.0' y='13.0' font-size='13' fill='rgb(3, 54, 86)'>Mostra QR code</text>
+      </g>
+    </g>
+  </g>
+  <g transform='translate(38.0,183.0)' id='_ic37tNZZEDuf5MDLSsXZ8Q'/>
+  <g transform='translate(50.0,283.0)' id='_ic4is9ZZEDuf5MDLSsXZ8Q'/>
+  <g id='_ic3UlNZZEDuf5MDLSsXZ8Q'>
+    <line y1='168.0' x1='81.0' y2='168.0' x2='216.0' id='_ic37s9ZZEDuf5MDLSsXZ8Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+  <g id='_ic37ptZZEDuf5MDLSsXZ8Q'>
+    <line y1='268.0' x1='81.0' y2='268.0' x2='216.0' id='_ic4istZZEDuf5MDLSsXZ8Q' stroke-width='1.0' fill='none' stroke='rgb(0, 0, 0)'/>
+  </g>
+</svg>

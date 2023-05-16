@@ -1,6 +1,8 @@
 ---
 title: Home
 layout: home
+has_children: false
+nav_order: 1
 ---
 
 # Waypoint Explorer
@@ -77,6 +79,48 @@ Analista: "Ora che abbiamo definito le caratteristiche generali, come vi immagin
 Esperto del Dominio: "Pensavamo ad una applicazione del cellulare o ad un sito, visto che gli utenti devono poter utilizzare il servizio da smartphone all'esterno in giro per il territorio. Riassumento quando detto fino ad ora, il visitatore deve poter selezionare un percorso, vedere i punti di interesse sulla mappa per potersi orientare, scansionare il codice QR in ogni tappa, utilizzare i punti ottenuti per poter ricevere i coupon di sconto. L'amministrazione comunale deve poter monitorare la frequenza delle visite dei luoghi di itneresse, le condizioni ambientali rilevate sul proprio territorio e lo stato delle stazioni metereologiche stesse."
 
 #### Diagrammi dei casi d'uso
+A seguito dell'intervista con il committente e delle domande specifiche su alcuni aspetti, sono stati prodotti dei diagrammi dei casi d'uso. Essi hanno aiutato a schematizzare e rendere più chiari quello che ogni attore del sistema deve poter fare.
+
+Nel diagramma in <a href="#fig1">Figura 1</a> sono rappresentati sia i casi d'uso di un utente guest, cioè non autenticato, che quelli dell'utente registrato:
+- utente:
+  - visualizza tutta lista dei possibili percorsi
+  - seleziona un percorso tra quelli visualizzati
+  - arrivato ad una tappa, scansiona il relativo codice QR
+  - effettua registrazione inserendo i propri dati
+  - effettua login inserendo le proprie credenziali di accesso
+- utente registrato
+  - converte punti accumulati completando i percorsi in coupon sconto
+  - visualizza storico percorsi effettuati in precedenza
+
+<div align="center">
+<img src="img/usecase-diagram-utente.svg" alt="Diagramma dei casi d’uso dell'utente" >
+<p align="center" id="fig1">[Fig 1] Diagramma dei casi d’uso: utente</p>
+</div>
+
+Nel diagramma in <a href="#fig2">Figura 2</a> sono rappresentati i casi d'uso che riguardano l'area amministrativa del sistema:
+- utente:
+  - effettua il login per entrare nell'area riservata dell'amministrazione
+- amministazione comunale:
+  - visualizza le informazioni relative allo stato e al funzionamento dei dispositivi (sensori e display)
+  - visualizza le statistiche riguardanti le visite dei punti di interesse nel territorio
+  - crea percorsi che comprendono una o più tappe
+  - gestisce i coupon degli sconti, cioè inserisce dei possibili coupon da riscattare e decide quanti punti assegnare per ogni tappa
+  - visualizza i dati sulle condizioni ambientali rilevati dai sensori
+<div align="center">
+<img src="img/usecase-diagram-comune.svg" alt="Diagramma dei casi d’uso dell'amministrazione comunale" >
+<p align="center" id="fig2">[Fig 2] Diagramma dei casi d’uso: amministrazione comunale</p>
+</div>
+
+Nel diagramma in <a href="#fig3">Figura 3</a> sono rappresentati i casi d'uso relativi ai sensori utilizzati nel sistema di rilevamento e ai display:
+- sensore:
+  - raccoglie i dati ambientali effettuando le misurazioni
+- display:
+  - mostra il codice QR relativo ad una determinata tappa
+<div align="center">
+<img src="img/usecase-diagram-dispositivo.svg" alt="Diagramma dei casi d’uso del dispositivo" >
+<p align="center" id="fig3">[Fig 3] Diagramma dei casi d’uso: dispositivo esterno</p>
+</div>
+
 #### Diagrammi delle attività
 #### Domain storytelling
 #### Mock-up
