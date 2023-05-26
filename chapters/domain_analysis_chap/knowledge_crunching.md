@@ -72,7 +72,7 @@ Nel diagramma in <a href="#fig1">Figura 1</a> sono rappresentati sia i casi d'us
   - effettua registrazione inserendo i propri dati
   - effettua login inserendo le proprie credenziali di accesso
 - utente registrato:
-  - converte punti accumulati completando i percorsi in coupon sconto
+  - converte in coupon sconto i punti accumulati completando i percorsi
   - visualizza storico percorsi effettuati in precedenza
 
 <div align="center">
@@ -81,9 +81,9 @@ Nel diagramma in <a href="#fig1">Figura 1</a> sono rappresentati sia i casi d'us
 </div>
 
 Nel diagramma in <a href="#fig2">Figura 2</a> sono rappresentati i casi d'uso che riguardano l'area amministrativa del sistema:
-- utente:
+- utente guest:
   - effettua il login per entrare nell'area riservata dell'amministrazione
-- amministazione comunale:
+- amministrazione comunale:
   - visualizza le informazioni relative allo stato e al funzionamento dei dispositivi (sensori e display)
   - visualizza le statistiche riguardanti le visite dei punti di interesse nel territorio
   - crea percorsi che comprendono una o più tappe
