@@ -13,13 +13,13 @@ In più, vorremmo incentivare l'acquisto nei negozi locali, quindi dobbiamo pens
 
 ---
 Analista: "Cosa intendete come percorso?"\
-Esperto del Dominio: "Un percorso è un itenerario composto da varie tappe. Ogni tappa si colloca in un punto di interesse del territorio."
+Esperto del Dominio: "Un percorso è un itenerario composto da varie tappe. Ogni tappa coincide con un punto di interesse del territorio."
 
 Analista: "Cosa si intendete per punto di interesse?"\
-Esperto del Dominio: "Un punto di interesse è tutto ciò che può interessare ad un visitatore: musei, monumenti, piazze, edifici rilvenati, punti panoramici, sentieri, parchi, etc."
+Esperto del Dominio: "Un punto di interesse è tutto ciò che detiene un valore significativo per l'amministrazione comunale, tanto da volerlo promuovere come meta di visita: musei, monumenti, piazze, edifici rilevanti, punti panoramici, sentieri, parchi, etc."
 
 Analista: "Chi e come crea i percorsi?"\
-Esperto del Dominio: "Il Comune si occuperà di decidere quali sono i punti di interesse all'interno del proprio territorio che corrispondono alle tappe dei percorsi. Utilizzando le tappe inserite nel sistema, il Comune può creare dei percorsi tematici che verranno suggeriti ai visitatori, ad esempio i luoghi di Dante, i monumenti patrimonio dell'Unesco, i punti panoramici, i parchi e giardini pubblici."
+Esperto del Dominio: "Il Comune si occuperà di decidere quali sono i punti di interesse all'interno del proprio territorio che corrispondono alle tappe dei percorsi. Utilizzando le tappe inserite nel sistema, il Comune può creare dei percorsi suddivisi in categorie che verranno suggeriti ai visitatori, ad esempio percorsi culturali, tematici e naturalistici."
 
 Analista: "Il visitatore dovrà necessariamente seguire per intero un percorso? Potrà interromperlo prima della fine? Potrà visitare altri punti di interesse che non sono all'interno del percorso scelto?"\
 Esperto del Dominio: "No, l'utente potrà scegliere di effettuare solo una parte del percorso scelto, cioè può terminarlo in qualsiasi momento. In più, se dovesse scegliere di aggiungere altre tappe che non sono incluse nel percorso, può farlo liberamente e poi continuare con il percorso scelto inizialmente."
@@ -37,10 +37,10 @@ Analista: "Cosa succede quando un utente termina un percorso?"\
 Esperto del Dominio: "Il visitatore visualizza un riepilogo del percorso appena concluso. Vorremmo che gli utenti registrati possano visualizzare anche a posteriori i percorsi effettuati con le relative informazioni."
 
 Analista: "Quindi consideriamo che ci possano essere sia utenti registrati che non?"\
-Esperto del Dominio: "Chiunque può utilizzare alcune funzionalità del sistema, cioè visualizzare ed effettuare i percorsi. Se però un utente si registra, ha a disposizione più funzioanlità e vantaggi: lo storico dei percorsi e gli sconti. Per la registrazione, bastano il nominativo, città di residenza, Stato, fascia d'età, indirizzo e-mail e password di accesso."
+Esperto del Dominio: "Chiunque può utilizzare alcune funzionalità del sistema, cioè visualizzare ed effettuare i percorsi. Se però un utente si registra, ha a disposizione più funzionalità e vantaggi: lo storico dei percorsi e gli sconti. Per la registrazione, bastano username, città di residenza, Stato, anno di nascita, indirizzo e-mail e password di accesso."
 
 Analista: "Dato che ha accennato all'incentivare l'acquisto nei negozi locali e sconti, questi ultimi con quale criterio vengono rilasciati?"\
-Esperto del Dominio: "L'utente accumula un certo numero di punti predeterminato per ogni tappa che visita e, completando interamente il percorso, ottiene punti extra. Per incentivarlo a visitare luoghi meno conosciuti o più lontani, questi punti di interesse potrebbero avere un punteggio maggiore. L'utente può utilizzare i punti accumulati per sbloccare dei coupon di sconto per una serie di negozi. Addirittura, potremmo pensare di inserire questo meccanismo per fornire sconti anche per musei o luoghi culturali a pagamento presenti sul territorio."
+Esperto del Dominio: "L'utente accumula un certo numero di punti predeterminato per ogni tappa che visita e, completando interamente il percorso, ottiene punti extra. Per incentivarlo a visitare luoghi meno conosciuti o più lontani, questi punti di interesse potrebbero avere un punteggio maggiore. L'utente può utilizzare i punti accumulati per sbloccare dei coupon di sconto per una serie di attività commerciali. Addirittura, potremmo pensare di inserire questo meccanismo per fornire sconti anche per musei o luoghi culturali a pagamento presenti sul territorio."
 
 Analista: "Come pensavate di far accumulare i punti all'utente e come può ottenere i coupon?"\
 Esperto del Dominio: "Dopo che l'utente si è registrato, il sistema memorizza automaticamente il punteggio ottenuto, così che possa visualizzarlo e convertirlo in coupon validi per un singolo utilizzo."
@@ -58,8 +58,11 @@ Esperto del Dominio: "Ci interesserebbe ottenere informazioni riguardanti temper
 Analista: "Tutti i punti di interesse scelti dal Comune, hanno una copertura di rete e una fonte di alimentazione per la stazione metereologica?"\
 Esperto del Dominio: "Purtroppo non possiamo assicurare queste caratteristiche, perché alcuni punti di interesse potrebbero trovarsi lontano dai centri abitati e/o immerso nella natura."
 
+Analista: "Quindi per ogni tappa deve essere presente un dispositivo o possono esserci altri modi per identificare una tappa?"\
+Esperto del Dominio: "Potrebbero esserci dei semplici codici QR stampati, tuttavia, considerando la necessità di un codice univoco per ogni visita al fine di evitare la riutilizzazione dei codici e l'ottenimento dei punti senza effettuare la visita, è possibile ipotizzare che le tappe che utilizzano un QR code stampato non assegnino punti agli utenti."
+
 Analista: "Ora che abbiamo definito le caratteristiche generali, come vi immaginate il progetto?"\
-Esperto del Dominio: "Pensavamo ad una applicazione del cellulare o ad un sito, visto che gli utenti devono poter utilizzare il servizio da smartphone all'esterno in giro per il territorio. Riassumento quando detto fino ad ora, il visitatore deve poter selezionare un percorso, vedere i punti di interesse sulla mappa per potersi orientare, scansionare il codice QR in ogni tappa, utilizzare i punti ottenuti per poter ricevere i coupon di sconto. L'amministrazione comunale deve poter monitorare la frequenza delle visite dei luoghi di itneresse, le condizioni ambientali rilevate sul proprio territorio e lo stato delle stazioni metereologiche stesse."
+Esperto del Dominio: "Pensavamo ad una applicazione del cellulare o ad un sito, visto che gli utenti devono poter utilizzare il servizio da smartphone all'esterno in giro per il territorio. Riassumendo quanto detto fino ad ora, il visitatore deve poter selezionare un percorso, vedere i punti di interesse sulla mappa per potersi orientare, scansionare il codice QR in ogni tappa, utilizzare i punti ottenuti per poter ricevere i coupon di sconto. L'amministrazione comunale deve poter monitorare la frequenza delle visite dei luoghi di interesse, le condizioni ambientali rilevate sul proprio territorio e lo stato delle stazioni metereologiche stesse."
 
 ## Diagrammi dei casi d'uso
 A seguito dell'intervista con il committente e delle domande specifiche su alcuni aspetti, sono stati prodotti dei diagrammi dei casi d'uso. Essi hanno aiutato a schematizzare e rendere più chiaro quello che ogni attore del sistema deve poter fare.
@@ -86,7 +89,7 @@ Nel diagramma in <a href="#fig2">Figura 2</a> sono rappresentati i casi d'uso ch
 - amministrazione comunale:
   - visualizza le informazioni relative allo stato e al funzionamento dei dispositivi (sensori e display)
   - visualizza le statistiche riguardanti le visite dei punti di interesse nel territorio
-  - crea percorsi che comprendono una o più tappe
+  - gestisce percorsi che comprendono una o più tappe
   - gestisce i coupon degli sconti, cioè inserisce dei possibili coupon da riscattare e decide quanti punti assegnare per ogni tappa
   - visualizza i dati sulle condizioni ambientali rilevati dai sensori
 <div align="center">

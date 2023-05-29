@@ -15,7 +15,7 @@ I requisiti funzionali sono le specifiche funzionalità e comportamenti che un s
    2. mostrare le tappe che compongono i percorsi
       1. mostrare l'ordine consigliato delle tappe che compongono un percorso
    3. mostrare i percorsi diversamente secondo la loro tipologia
-   4. filtrare percorsi visualizzando e selezionare le tipologie di percorsi, esse possono distinguersi in:-
+   4. filtrare i percorsi per tipologia:
       - culturale: percorsi che includono elementi di vario tipo del patrimonio culturale di una zona (teatri, musei, mausolei, tombe, chiese, statue, etc.)
       - tematico: percorsi che includono punti di interesse che riguardano uno specifico tema (luoghi che hanno ispirato un autore, luoghi che sono legati ad un personaggio famoso, edifici di un architetto, monumenti di una certa epoca storica, etc.)
       - naturalistico: percorsi che includono elementi naturali presenti nel territorio (parchi, spiagge, sentieri, fiumi, etc.)
@@ -45,11 +45,11 @@ I requisiti funzionali sono le specifiche funzionalità e comportamenti che un s
     2. punteggio totale ottenuto
     3. tempo impiegato
 
-5. effettuare la registrazione di un utente inserendo alcuni dati:
+5. effettuare la registrazione di un utente guest inserendo alcuni dati:
     - obbligatori: nome utente, password, email, Paese
     - facoltativi: città, anno di nascita
 
-6.  effettuare il login utente inserendo email e password
+6.  effettuare il login utente inserendo nome utente e password
 
 7.  convertire in coupon sconto i punti accumulati completando i percorsi
     1. visualizzare totale punti disponibili
@@ -94,16 +94,24 @@ I requisiti funzionali sono le specifiche funzionalità e comportamenti che un s
     2. visualizzare il numero di utenti che hanno visitato il punto di interesse collegato al dispositivo, cioè quanti hanno scansionato un codice QR in quella determinata tappa
     3. visualizzare se sono presenti guasti
 
-5. creare dei percorsi suggeriti inserendo:
-    - la categoria
-    - le tappe che dovranno essere visitate
-    - i punti extra che è possibile ottenere completando il percorso
+5. gestire i percorsi suggeriti
+    1. creare un percorso inserendo:
+       - la categoria
+       - le tappe che dovranno essere visitate
+       - i punti extra che è possibile ottenere completando il percorso
+    2. modificare un percorso cambiando:
+       - le tappe che dovranno essere visitate
+       - i punti extra che è possibile ottenere completando il percorso
+    3. eliminare un percorso
         
-6. creare i coupon inserendo:
-    - le attività commerciali che li mettono a disposizione
-    - descrizione del coupon (include informazioni come la validità, le condizioni, il valore, etc.)
-    - il numero di punti necessari per ottenerli
-        
+6. gestire i coupon
+    1. creare un coupon inserendo:
+       - le attività commerciali che li mettono a disposizione
+       - descrizione del coupon (include informazioni come la validità, le condizioni, il valore, etc.)
+       - il numero di punti necessari per ottenerli
+    2. eliminare un coupon
+    3. 
+
 ## Dispositivo
 1. mostrare nel display il codice QR, il quale contiene diverse informazioni:
     1. codice univoco per identificare il dispositivo
