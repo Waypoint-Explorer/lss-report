@@ -13,16 +13,19 @@ In più, vorremmo incentivare l'acquisto nei negozi locali, quindi dobbiamo pens
 
 ---
 Analista: "Cosa intendete come percorso?"\
-Esperto del Dominio: "Un percorso è un itenerario composto da varie tappe. Ogni tappa si colloca in un punto di interesse del territorio."
+Esperto del Dominio: "Un percorso è un itenerario composto da varie tappe. Ogni tappa coincide con un punto di interesse del territorio."
 
 Analista: "Cosa si intendete per punto di interesse?"\
-Esperto del Dominio: "Un punto di interesse è tutto ciò che può interessare ad un visitatore: musei, monumenti, piazze, edifici rilvenati, punti panoramici, sentieri, parchi, etc."
+Esperto del Dominio: "Un punto di interesse è tutto ciò che detiene un valore significativo per l'amministrazione comunale, tanto da volerlo promuovere come meta di visita: musei, monumenti, piazze, edifici rilevanti, punti panoramici, sentieri, parchi, etc."
 
 Analista: "Chi e come crea i percorsi?"\
-Esperto del Dominio: "Il Comune si occuperà di decidere tutti i percorsi con le relative tappe creando percorsi tematici, ad esempio i luoghi di Dante, i monumenti patrimonio dell'Unesco, i punti panoramici, i parchi e giardini pubblici."
+Esperto del Dominio: "Il Comune si occuperà di decidere quali sono i punti di interesse all'interno del proprio territorio che corrispondono alle tappe dei percorsi. Utilizzando le tappe inserite nel sistema, il Comune può creare dei percorsi suddivisi in categorie che verranno suggeriti ai visitatori, ad esempio percorsi culturali, tematici e naturalistici."
+
+Analista: "Il visitatore dovrà necessariamente seguire per intero un percorso? Potrà interromperlo prima della fine? Potrà visitare altri punti di interesse che non sono all'interno del percorso scelto?"\
+Esperto del Dominio: "No, l'utente potrà scegliere di effettuare solo una parte del percorso scelto, cioè può terminarlo in qualsiasi momento. In più, se dovesse scegliere di aggiungere altre tappe che non sono incluse nel percorso, può farlo liberamente e poi continuare con il percorso scelto inizialmente."
 
 Analista: "Quante tappe ci possono essere in un percorso?"\
-Esperto del Dominio: "In un percorso ci deve essere almeno una tappa, ma non c'è un limite massimo. Nel caso in cui ci siano più tappe in un percorso, queste hanno un ordine ben preciso da rispettare."
+Esperto del Dominio: "In un percorso ci deve essere almeno una tappa, ma non c'è un limite massimo. Nel caso in cui ci siano più tappe in un percorso, queste non hanno un ordine preciso da rispettare."
 
 Analista: "Come far navigare un utente tra le varie tappe di un percorso?"\
 Esperto del Dominio: "Ci sarà una mappa che mostra i punti di interesse e un itinerario consigliato, ma l'utente è libero di scegliere il tragitto che ritiene più opportuno."
@@ -34,10 +37,10 @@ Analista: "Cosa succede quando un utente termina un percorso?"\
 Esperto del Dominio: "Il visitatore visualizza un riepilogo del percorso appena concluso. Vorremmo che gli utenti registrati possano visualizzare anche a posteriori i percorsi effettuati con le relative informazioni."
 
 Analista: "Quindi consideriamo che ci possano essere sia utenti registrati che non?"\
-Esperto del Dominio: "Chiunque può utilizzare alcune funzionalità del sistema, cioè visualizzare ed effettuare i percorsi. Se però un utente si registra, ha a disposizione più funzioanlità e vantaggi: lo storico dei percorsi e gli sconti. Per la registrazione, bastano il nominativo, città di residenza, Stato, fascia d'età, indirizzo e-mail e password di accesso."
+Esperto del Dominio: "Chiunque può utilizzare alcune funzionalità del sistema, cioè visualizzare ed effettuare i percorsi. Se però un utente si registra, ha a disposizione più funzionalità e vantaggi: lo storico dei percorsi e gli sconti. Per la registrazione, bastano username, città di residenza, Stato, anno di nascita, indirizzo e-mail e password di accesso."
 
 Analista: "Dato che ha accennato all'incentivare l'acquisto nei negozi locali e sconti, questi ultimi con quale criterio vengono rilasciati?"\
-Esperto del Dominio: "L'utente accumula un certo numero di punti predeterminato per ogni tappa che visita. Per incentivarlo a visitare luoghi meno conosciuti o più lontani, questi punti di interesse potrebbero avere un punteggio maggiore. L'utente può utilizzare i punti accumulati per sbloccare dei coupon di sconto per una serie di negozi. Addirittura, potremmo pensare di inserire questo meccanismo per fornire sconti anche per musei o luoghi culturali a pagamento presenti sul territorio."
+Esperto del Dominio: "L'utente accumula un certo numero di punti predeterminato per ogni tappa che visita e, completando interamente il percorso, ottiene punti extra. Per incentivarlo a visitare luoghi meno conosciuti o più lontani, questi punti di interesse potrebbero avere un punteggio maggiore. L'utente può utilizzare i punti accumulati per sbloccare dei coupon di sconto per una serie di attività commerciali. Addirittura, potremmo pensare di inserire questo meccanismo per fornire sconti anche per musei o luoghi culturali a pagamento presenti sul territorio."
 
 Analista: "Come pensavate di far accumulare i punti all'utente e come può ottenere i coupon?"\
 Esperto del Dominio: "Dopo che l'utente si è registrato, il sistema memorizza automaticamente il punteggio ottenuto, così che possa visualizzarlo e convertirlo in coupon validi per un singolo utilizzo."
@@ -55,11 +58,14 @@ Esperto del Dominio: "Ci interesserebbe ottenere informazioni riguardanti temper
 Analista: "Tutti i punti di interesse scelti dal Comune, hanno una copertura di rete e una fonte di alimentazione per la stazione metereologica?"\
 Esperto del Dominio: "Purtroppo non possiamo assicurare queste caratteristiche, perché alcuni punti di interesse potrebbero trovarsi lontano dai centri abitati e/o immerso nella natura."
 
+Analista: "Quindi per ogni tappa deve essere presente un dispositivo o possono esserci altri modi per identificare una tappa?"\
+Esperto del Dominio: "Potrebbero esserci dei semplici codici QR stampati, tuttavia, considerando la necessità di un codice univoco per ogni visita al fine di evitare la riutilizzazione dei codici e l'ottenimento dei punti senza effettuare la visita, è possibile ipotizzare che le tappe che utilizzano un QR code stampato non assegnino punti agli utenti."
+
 Analista: "Ora che abbiamo definito le caratteristiche generali, come vi immaginate il progetto?"\
-Esperto del Dominio: "Pensavamo ad una applicazione del cellulare o ad un sito, visto che gli utenti devono poter utilizzare il servizio da smartphone all'esterno in giro per il territorio. Riassumento quando detto fino ad ora, il visitatore deve poter selezionare un percorso, vedere i punti di interesse sulla mappa per potersi orientare, scansionare il codice QR in ogni tappa, utilizzare i punti ottenuti per poter ricevere i coupon di sconto. L'amministrazione comunale deve poter monitorare la frequenza delle visite dei luoghi di itneresse, le condizioni ambientali rilevate sul proprio territorio e lo stato delle stazioni metereologiche stesse."
+Esperto del Dominio: "Pensavamo ad una applicazione del cellulare o ad un sito, visto che gli utenti devono poter utilizzare il servizio da smartphone all'esterno in giro per il territorio. Riassumendo quanto detto fino ad ora, il visitatore deve poter selezionare un percorso, vedere i punti di interesse sulla mappa per potersi orientare, scansionare il codice QR in ogni tappa, utilizzare i punti ottenuti per poter ricevere i coupon di sconto. L'amministrazione comunale deve poter monitorare la frequenza delle visite dei luoghi di interesse, le condizioni ambientali rilevate sul proprio territorio e lo stato delle stazioni metereologiche stesse."
 
 ## Diagrammi dei casi d'uso
-A seguito dell'intervista con il committente e delle domande specifiche su alcuni aspetti, sono stati prodotti dei diagrammi dei casi d'uso. Essi hanno aiutato a schematizzare e rendere più chiari quello che ogni attore del sistema deve poter fare.
+A seguito dell'intervista con il committente e delle domande specifiche su alcuni aspetti, sono stati prodotti dei diagrammi dei casi d'uso. Essi hanno aiutato a schematizzare e rendere più chiaro quello che ogni attore del sistema deve poter fare.
 
 Nel diagramma in <a href="#fig1">Figura 1</a> sono rappresentati sia i casi d'uso di un utente guest, cioè non autenticato, che quelli dell'utente registrato:
 - utente:
@@ -68,8 +74,8 @@ Nel diagramma in <a href="#fig1">Figura 1</a> sono rappresentati sia i casi d'us
   - arrivato ad una tappa, scansiona il relativo codice QR
   - effettua registrazione inserendo i propri dati
   - effettua login inserendo le proprie credenziali di accesso
-- utente registrato
-  - converte punti accumulati completando i percorsi in coupon sconto
+- utente registrato:
+  - converte in coupon sconto i punti accumulati completando i percorsi
   - visualizza storico percorsi effettuati in precedenza
 
 <div align="center">
@@ -78,12 +84,12 @@ Nel diagramma in <a href="#fig1">Figura 1</a> sono rappresentati sia i casi d'us
 </div>
 
 Nel diagramma in <a href="#fig2">Figura 2</a> sono rappresentati i casi d'uso che riguardano l'area amministrativa del sistema:
-- utente:
+- utente guest:
   - effettua il login per entrare nell'area riservata dell'amministrazione
-- amministazione comunale:
+- amministrazione comunale:
   - visualizza le informazioni relative allo stato e al funzionamento dei dispositivi (sensori e display)
   - visualizza le statistiche riguardanti le visite dei punti di interesse nel territorio
-  - crea percorsi che comprendono una o più tappe
+  - gestisce percorsi che comprendono una o più tappe
   - gestisce i coupon degli sconti, cioè inserisce dei possibili coupon da riscattare e decide quanti punti assegnare per ogni tappa
   - visualizza i dati sulle condizioni ambientali rilevati dai sensori
 <div align="center">
@@ -101,8 +107,57 @@ Nel diagramma in <a href="#fig3">Figura 3</a> sono rappresentati i casi d'uso re
 <p align="center" id="fig3">[Fig 3] Diagramma dei casi d’uso: dispositivo esterno</p>
 </div>
 
-## Diagrammi delle attività
-
 ## Domain storytelling
+A seguito della lunga intervista effettuata con l'esperto del dominio e successivamente alla creazione degli schemi dei casi d'uso, sono stati approfonditi i concetti insieme al committente. Utilizzando la strategia del domain storytelling, sono stati realizzati i seguenti diagrammi per definire a fondo come i vari utilizzatori interagiscono passo per passo con il sistema.
+
+<div align="center">
+<img src="/img/UsoUtente.svg" alt="" >
+<p align="center" id="fig3">[Fig ] Utilizzo sistema parte utente</p>
+</div>
+
+<div align="center">
+<img src="/img/ModificaCredenziali.svg" alt="" >
+<p align="center" id="fig3">[Fig ] Utente Modifica Credenziali</p>
+</div>
+
+<div align="center">
+<img src="/img/VisualizzazioneStoricoPercorsi.svg" alt="" >
+<p align="center" id="fig3">[Fig ] Utente Visualizza Storico Percorsi</p>
+</div>
+
+<div align="center">
+<img src="/img/AcquistoCoupon.svg" alt="" >
+<p align="center" id="fig3">[Fig ] Utente Acquista un coupon</p>
+</div>
+
+<div align="center">
+<img src="/img/CreazionePercorso.svg" alt="" >
+<p align="center" id="fig3">[Fig ] Amministrazione crea un percorso</p>
+</div>
+
+<div align="center">
+<img src="/img/VisualizzazioneInformazioniDevice.svg" alt="" >
+<p align="center" id="fig3">[Fig ] Amministrazione visualizza dati device</p>
+</div>
+
+<div align="center">
+<img src="/img/VisualizzazioneDatiAmbientali.svg" alt="" >
+<p align="center" id="fig3">[Fig ] Amministrazione visualizza dati ambientali</p>
+</div>
+
+<div align="center">
+<img src="/img/VisualizzazioneStatisticheVisite.svg" alt="" >
+<p align="center" id="fig3">[Fig ] Amministrazione visualizza statistiche visite</p>
+</div>
+
+<div align="center">
+<img src="/img/GestioneCoupon.svg" alt="" >
+<p align="center" id="fig3">[Fig ] Amministrazione gestisce coupon</p>
+</div>
+
+<div align="center">
+<img src="/img/Device.svg" alt="" >
+<p align="center" id="fig3">[Fig ] Device</p>
+</div>
 
 ## Mock-up
