@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Knowlede Crunching
 parent: Analisi del Dominio
 nav_order: 1

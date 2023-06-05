@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Sottodomini
 parent: Analisi del Dominio
 nav_order: 2
@@ -9,11 +10,11 @@ Sottodomini trovati:
 - percorsi: si occupa della gestione dei percorsi (aggiunta, modifica, eliminazione) e delle loro tappe
 - marcatori: si occupa della gestione dei marcatori (aggiunta, modifica, eliminazione) e delle loro condizioni (corretto funzionamento, errori, guasti)
 - coupon: si occupa della gestione dei coupon (aggiunta, eliminazione, validità)
-- utenti: si occupa della gestione degli utenti (aggiunta, modifica, permessi, informazioni sulle azioni passate degli utenti, etc.)
+- utenti: si occupa della gestione degli utenti (aggiunta, gestione dello storico)
 - dati ambientali: si occupa della gestione dei dati ambientali, della visualizzazione e analisi delle informazioni
 
 <div align="center">
-<img src="../../img/core-domain-chart.png" alt="Core Domain Chart" >
+<img src="../../img/core-domain-chart.svg" alt="Core Domain Chart" >
 <p align="center" id="fig">[Fig ] Core Domain Chart</p>
 </div>
 

@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Requisiti di Business
 parent: Requisiti
 nav_order: 1

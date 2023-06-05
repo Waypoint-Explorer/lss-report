@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Requisiti Utente
 parent: Requisiti
 nav_order: 2
