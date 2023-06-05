@@ -79,7 +79,7 @@ Nel diagramma in <a href="#fig1">Figura 1</a> sono rappresentati sia i casi d'us
   - visualizza storico percorsi effettuati in precedenza
 
 <div align="center">
-<img src="img/usecase-diagram-utente.svg" alt="Diagramma dei casi d’uso dell'utente" >
+<img src="../../img/usecase-diagram-utente.svg" alt="Diagramma dei casi d’uso dell'utente" >
 <p align="center" id="fig1">[Fig 1] Diagramma dei casi d’uso: utente</p>
 </div>
 
@@ -93,7 +93,7 @@ Nel diagramma in <a href="#fig2">Figura 2</a> sono rappresentati i casi d'uso ch
   - gestisce i coupon degli sconti, cioè inserisce dei possibili coupon da riscattare e decide quanti punti assegnare per ogni tappa
   - visualizza i dati sulle condizioni ambientali rilevati dai sensori
 <div align="center">
-<img src="img/usecase-diagram-comune.svg" alt="Diagramma dei casi d’uso dell'amministrazione comunale" >
+<img src="../../img/usecase-diagram-comune.svg" alt="Diagramma dei casi d’uso dell'amministrazione comunale" >
 <p align="center" id="fig2">[Fig 2] Diagramma dei casi d’uso: amministrazione comunale</p>
 </div>
 
@@ -103,7 +103,7 @@ Nel diagramma in <a href="#fig3">Figura 3</a> sono rappresentati i casi d'uso re
 - display:
   - mostra il codice QR relativo ad una determinata tappa
 <div align="center">
-<img src="img/usecase-diagram-dispositivo.svg" alt="Diagramma dei casi d’uso del dispositivo" >
+<img src="../../img/usecase-diagram-dispositivo.svg" alt="Diagramma dei casi d’uso del dispositivo" >
 <p align="center" id="fig3">[Fig 3] Diagramma dei casi d’uso: dispositivo esterno</p>
 </div>
 
@@ -111,52 +111,52 @@ Nel diagramma in <a href="#fig3">Figura 3</a> sono rappresentati i casi d'uso re
 A seguito della lunga intervista effettuata con l'esperto del dominio e successivamente alla creazione degli schemi dei casi d'uso, sono stati approfonditi i concetti insieme al committente. Utilizzando la strategia del domain storytelling, sono stati realizzati i seguenti diagrammi per definire a fondo come i vari utilizzatori interagiscono passo per passo con il sistema.
 
 <div align="center">
-<img src="/img/UsoUtente.svg" alt="" >
+<img src="../../img/UsoUtente.svg" alt="" >
 <p align="center" id="fig3">[Fig ] Utilizzo sistema parte utente</p>
 </div>
 
 <div align="center">
-<img src="/img/ModificaCredenziali.svg" alt="" >
+<img src="../../img/ModificaCredenziali.svg" alt="" >
 <p align="center" id="fig3">[Fig ] Utente Modifica Credenziali</p>
 </div>
 
 <div align="center">
-<img src="/img/VisualizzazioneStoricoPercorsi.svg" alt="" >
+<img src="../../img/VisualizzazioneStoricoPercorsi.svg" alt="" >
 <p align="center" id="fig3">[Fig ] Utente Visualizza Storico Percorsi</p>
 </div>
 
 <div align="center">
-<img src="/img/AcquistoCoupon.svg" alt="" >
+<img src="../../img/AcquistoCoupon.svg" alt="" >
 <p align="center" id="fig3">[Fig ] Utente Acquista un coupon</p>
 </div>
 
 <div align="center">
-<img src="/img/CreazionePercorso.svg" alt="" >
+<img src="../../img/CreazionePercorso.svg" alt="" >
 <p align="center" id="fig3">[Fig ] Amministrazione crea un percorso</p>
 </div>
 
 <div align="center">
-<img src="/img/VisualizzazioneInformazioniDevice.svg" alt="" >
+<img src="../../img/VisualizzazioneInformazioniDevice.svg" alt="" >
 <p align="center" id="fig3">[Fig ] Amministrazione visualizza dati device</p>
 </div>
 
 <div align="center">
-<img src="/img/VisualizzazioneDatiAmbientali.svg" alt="" >
+<img src="../../img/VisualizzazioneDatiAmbientali.svg" alt="" >
 <p align="center" id="fig3">[Fig ] Amministrazione visualizza dati ambientali</p>
 </div>
 
 <div align="center">
-<img src="/img/VisualizzazioneStatisticheVisite.svg" alt="" >
+<img src="../../img/VisualizzazioneStatisticheVisite.svg" alt="" >
 <p align="center" id="fig3">[Fig ] Amministrazione visualizza statistiche visite</p>
 </div>
 
 <div align="center">
-<img src="/img/GestioneCoupon.svg" alt="" >
+<img src="../../img/GestioneCoupon.svg" alt="" >
 <p align="center" id="fig3">[Fig ] Amministrazione gestisce coupon</p>
 </div>
 
 <div align="center">
-<img src="/img/Device.svg" alt="" >
+<img src="../../img/Device.svg" alt="" >
 <p align="center" id="fig3">[Fig ] Device</p>
 </div>
 

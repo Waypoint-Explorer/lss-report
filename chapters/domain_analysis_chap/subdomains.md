@@ -13,7 +13,7 @@ Sottodomini trovati:
 - dati ambientali: si occupa della gestione dei dati ambientali, della visualizzazione e analisi delle informazioni
 
 <div align="center">
-<img src="img/core-domain-chart.png" alt="Core Domain Chart" >
+<img src="../../img/core-domain-chart.png" alt="Core Domain Chart" >
 <p align="center" id="fig">[Fig ] Core Domain Chart</p>
 </div>
 
