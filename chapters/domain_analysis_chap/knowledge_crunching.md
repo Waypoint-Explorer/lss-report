@@ -162,3 +162,23 @@ A seguito della lunga intervista effettuata con l'esperto del dominio e successi
 </div>
 
 ## Mock-up
+
+<div align="center">
+<img src="../../img/mockup1.png" alt="" >
+<p align="center" id="fig3">[Fig ] Mockup</p>
+</div>
+
+<div align="center">
+<img src="../../img/mockup2.png" alt="" >
+<p align="center" id="fig3">[Fig ] Mockup</p>
+</div>
+
+<div align="center">
+<img src="../../img/mockup3.png" alt="" >
+<p align="center" id="fig3">[Fig ] Mockup</p>
+</div>
+
+<div align="center">
+<img src="../../img/mockup4.png" alt="" >
+<p align="center" id="fig3">[Fig ] Mockup</p>
+</div>
