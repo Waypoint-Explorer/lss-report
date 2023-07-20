@@ -5,10 +5,9 @@ has_children: false
 nav_order: 1
 ---
 
-# Waypoint Explorer
-
+# Waypoint Explore
 <div align="center">
-<img src="../../img/logo.svg" alt="Waypoint Explorer Logo" >
+<img src="/img/logo.svg" alt="Waypoint Explorer Logo" >
 <p align="center" id="logo">Waypoint Explorer Logo</p>
 </div>
 
