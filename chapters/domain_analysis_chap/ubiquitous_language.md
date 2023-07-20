@@ -23,12 +23,8 @@ Da questo punto in avanti, i seguenti termini verranno utilizzati con il signifi
 | punti | explorer points | valuta virtuale utilizzata all'interno del sistema, si ottengono visitando tappe e completando percorsi, possono essere utilizzati per riscattare dei coupon che hanno lo stesso valore in punti |
 | nome utente | username | identificativo univoco scelto dall'utente guest durante la registrazione, non necessariamente deve corrispondere al nome vero della persona |
 | - tipologia <br /> - categoria | - type <br /> - category| possibile categoria di un marcatore (dispositivo oppure marcatore QR) o di un itinerario (culturale, tematico, turistico, naturalistico, fitness) |
-
-Tabella traduzioni
-|**Termine italiano**|**Termine inglese**|
-|--------------------|-------------------|
-| culturale | cultural |
-| tematico | themed |
-| naturalistico | naturalistic |
-| turistico | turistic |
-| fitness | fitness |
+| culturale | cultural | percorso che include elementi di vario tipo del patrimonio culturale di una zona (teatri, musei, mausolei, tombe, chiese, statue, etc.) |
+| tematico | themed | percorso che include punti di interesse che riguardano uno specifico tema (luoghi che hanno ispirato un autore, luoghi che sono legati ad un personaggio famoso, edifici di un architetto, monumenti di una certa epoca storica, etc.) |
+| naturalistico | naturalistic | percorso che include elementi naturali presenti nel territorio (parchi, spiagge, sentieri, fiumi, etc.) |
+| turistico | turistic | percorso che include le attrazioni turistiche principali di una città (fontana, piazza, mercati, musei, viali, etc.) |
+| fitness | fitness | percorso che non necessariamente include punti di interesse storico-culturali-naturalistici, generalmente sono più lunghi con lo scopo di effettuare esercizio fisico (camminate, percorsi ciclabili, etc.) |
