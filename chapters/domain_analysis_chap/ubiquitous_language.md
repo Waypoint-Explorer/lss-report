@@ -6,7 +6,7 @@ nav_order: 3
 ---
 
 # Ubiquitous Language
-Da questo punto in avanti, i seguenti termini verranno utilizzati con il significato indicato nelle relative definizioni. Mentre la seguente documentazione è scritta in lingua italiana, dal momento che ci si confronta con un committente della Pubblica Amministrazione Italiana, durante l'implementazione sarà usata la lingua inglese, facendo riferimento ai termini corrispondenti.
+Da questo punto in avanti, i seguenti termini verranno utilizzati con il significato indicato nelle relative definizioni. Dal momento che ci si confronta con un committente della Pubblica Amministrazione, cioè il Comune di Ravenna, la documentazione è scritta in lingua italiana, mentre durante l'implementazione è utilizzata la lingua inglese, facendo riferimento ai termini corrispondenti.
 
 |**Termine italiano**|**Termine inglese**|**Definizione**|
 |--------------------|-------------------|---------------|
@@ -22,7 +22,7 @@ Da questo punto in avanti, i seguenti termini verranno utilizzati con il signifi
 | - codice sconto <br /> - coupon riscattato | redeemed coupon | coupon riscattato dall'utente, cioè un codice monouso |
 | punti | explorer points | valuta virtuale utilizzata all'interno del sistema, si ottengono visitando tappe e completando percorsi, possono essere utilizzati per riscattare dei coupon che hanno lo stesso valore in punti |
 | nome utente | username | identificativo univoco scelto dall'utente guest durante la registrazione, non necessariamente deve corrispondere al nome vero della persona |
-| - categoria <br /> - tipologia |||
+| - tipologia <br /> - categoria | - type <br /> - category| possibile categoria di un marcatore (dispositivo oppure marcatore QR) o di un itinerario (culturale, tematico, turistico, naturalistico, fitness) |
 
 Tabella traduzioni
 |**Termine italiano**|**Termine inglese**|
