@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Deployment
-parent: Implementazione
-nav_order: 2
+parent: DevOps
+nav_order: 3
 ---
 
 # Deployment

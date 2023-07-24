@@ -1,8 +1,10 @@
 ---
 layout: default
 title: DevOps
-has_children: false
-nav_order: 6
+has_children: true
+nav_order: 7
 ---
 
 # DevOps
+
+<!-- ci, gitflow, github actions, repository, branch protection rules ... -->
