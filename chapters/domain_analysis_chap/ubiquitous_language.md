@@ -6,7 +6,7 @@ nav_order: 3
 ---
 
 # Ubiquitous Language
-Da questo punto in avanti, i seguenti termini verranno utilizzati con il significato indicato nelle relative definizioni. Mentre la seguente documentazione è scritta in lingua italiana, dal momento che ci si confronta con un committente della Pubblica Amministrazione Italiana, durante l'implementazione sarà usata la lingua inglese, facendo riferimento ai termini corrispondenti.
+Da questo punto in avanti, i seguenti termini verranno utilizzati con il significato indicato nelle relative definizioni. Dal momento che ci si confronta con un committente della Pubblica Amministrazione, cioè il Comune di Ravenna, la documentazione è scritta in lingua italiana, mentre durante l'implementazione è utilizzata la lingua inglese, facendo riferimento ai termini corrispondenti.
 
 |**Termine italiano**|**Termine inglese**|**Definizione**|
 |--------------------|-------------------|---------------|
@@ -22,13 +22,9 @@ Da questo punto in avanti, i seguenti termini verranno utilizzati con il signifi
 | - codice sconto <br /> - coupon riscattato | redeemed coupon | coupon riscattato dall'utente, cioè un codice monouso |
 | punti | explorer points | valuta virtuale utilizzata all'interno del sistema, si ottengono visitando tappe e completando percorsi, possono essere utilizzati per riscattare dei coupon che hanno lo stesso valore in punti |
 | nome utente | username | identificativo univoco scelto dall'utente guest durante la registrazione, non necessariamente deve corrispondere al nome vero della persona |
-| - categoria <br /> - tipologia |||
-
-Tabella traduzioni
-|**Termine italiano**|**Termine inglese**|
-|--------------------|-------------------|
-| culturale | cultural |
-| tematico | themed |
-| naturalistico | naturalistic |
-| turistico | turistic |
-| fitness | fitness |
+| - tipologia <br /> - categoria | - type <br /> - category| possibile categoria di un marcatore (dispositivo oppure marcatore QR) o di un itinerario (culturale, tematico, turistico, naturalistico, fitness) |
+| culturale | cultural | percorso che include elementi di vario tipo del patrimonio culturale di una zona (teatri, musei, mausolei, tombe, chiese, statue, etc.) |
+| tematico | themed | percorso che include punti di interesse che riguardano uno specifico tema (luoghi che hanno ispirato un autore, luoghi che sono legati ad un personaggio famoso, edifici di un architetto, monumenti di una certa epoca storica, etc.) |
+| naturalistico | naturalistic | percorso che include elementi naturali presenti nel territorio (parchi, spiagge, sentieri, fiumi, etc.) |
+| turistico | turistic | percorso che include le attrazioni turistiche principali di una città (fontana, piazza, mercati, musei, viali, etc.) |
+| fitness | fitness | percorso che non necessariamente include punti di interesse storico-culturali-naturalistici, generalmente sono più lunghi con lo scopo di effettuare esercizio fisico (camminate, percorsi ciclabili, etc.) |
