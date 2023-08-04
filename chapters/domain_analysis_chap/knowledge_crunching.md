@@ -178,23 +178,40 @@ Infine, l'amministrazione comunale può visualizzare le statistiche relative all
 </div>
 
 ## Mock-up
+Con lo scopo di avere un'idea più chiara della suddivisione in interfacce delle varie funzionalità richieste e della loro disposizione grafica, insieme al committente sono stati ideati i mockup sotto riportati. 
+
+Come da Figura \ref{fig:mockup5}, le informazioni generali sul progetto, una breve guida utente e un pulsante per iniziare l'esplorazione sono tutte presenti nella pagina iniziale. Attraverso l'interazione con il bottone o tramite menu laterale, ci si sposta nella pagina di navigazione (Figura \ref{fig:mockup1}). In questo punto, può essere scelto il percorso da iniziare tra quelli proposti, aiutandosi con un filtro per categorie di itinerario. La mappa aiuta nella visualizzazione grafica del percorso stesso e delle tappe che lo compongono.
 
 <div align="center">
-<img src="../../img/mockup1.png" alt="" >
-<p align="center" id="fig3">[Figura ] Mockup</p>
+<img src="../../img/mockup5.png" alt="Pagina iniziale" style="width: 20rem">
+<p align="center" id="fig3">[Figura ] Pagina iniziale</p>
 </div>
 
 <div align="center">
-<img src="../../img/mockup2.png" alt="" >
-<p align="center" id="fig3">[Figura ] Mockup</p>
+<img src="../../img/mockup1.png" alt="Pagina navigazione utente" style="width: 26rem">
+<p align="center" id="fig3">[Figura ] Pagina navigazione utente</p>
+</div>
+
+Dal lato amministrativo, un dipendente comunale incaricato ha la possibilità di inserire nuovi marcatori nel sistema, che possono essere dispositivi fisici o codici QR stampati. Inoltre, è possibile creare tappe associate a un determinato marcatore e percorsi che comprendono una o più tappe. Questi elementi e le loro relative informazioni possono essere aggiunti in un'unica pagina, come in Figura \ref{fig:mockup6}. Per quanto riguarda le statistiche, è presente una schermata (come Figura \ref{fig:mockup3}) con istogrammi per la visualizzazione del numero di percorsi effettuati dagli utenti in un determinato periodo di tempo.
+
+<div align="center">
+<img src="../../img/mockup6.png" alt="Pagina amministrazione per inserimento marcatori, tappe, percorsi" style="width: 20rem">
+<p align="center" id="fig3">[Figura ] Pagina amministrazione per inserimento marcatori, tappe, percorsi</p>
 </div>
 
 <div align="center">
-<img src="../../img/mockup3.png" alt="" >
-<p align="center" id="fig3">[Figura ] Mockup</p>
+<img src="../../img/mockup3.png" alt="Pagina statistiche amministrazione" style="width: 20rem">
+<p align="center" id="fig3">[Figura ] Pagina statistiche amministrazione</p>
+</div>
+
+Infine, sono state create due interfacce dedicate alla registrazione di nuovi esploratori (Figura \ref{fig:mockup2}) e all'accesso al sistema da parte degli utenti o degli amministratori (Figura \ref{fig:mockup4}). Queste sono visibili solo quando l'applicazione è in modalità utente ospite, ovvero quando nessun utente ha effettuato l'accesso.
+
+<div align="center">
+<img src="../../img/mockup2.png" alt="Pagina registrazione utente" style="width: 20rem">
+<p align="center" id="fig3">[Figura ] Pagina registrazione utente</p>
 </div>
 
 <div align="center">
-<img src="../../img/mockup4.png" alt="" >
-<p align="center" id="fig3">[Figura ] Mockup</p>
+<img src="../../img/mockup4.png" alt="Pagina accesso utente e amministrazione" style="width: 20rem">
+<p align="center" id="fig3">[Figura ] Pagina accesso utente e amministrazione</p>
 </div>
