@@ -33,4 +33,8 @@ Questa architettura è utile per poter permettere ad ogni sviluppatore di avere 
 
 Questa seconda architettura è pensata per essere impiegata utilizzando un server remoto dove, oltre al sistema sviluppato, è presente anche un reverse proxy server realizzato utilizzando \textit{NGINX}\cite{nginx}. Una volta configurato, il reverse proxy server permette a client esterni di interagire con le istanze dei container docker presenti nel server e che ospitano, in maniera simile a prima, i macro componenti del sistema.
 
+Dal momento che la maggior parte delle informazioni dell'applicazione saranno visionabili mediante una mappa, grafici statistici o in formato testuale, si è deciso di porsi come problema e obiettivo quello di rendere accessibile l'interfaccia dell'applicazione, con particolare attenzione alle persone daltoniche e dislessiche.\
+Il design dell'interfaccia utente è stato eseguito considerando che la maggior parte degli utilizzatori dell'applicazione vi accederanno tramite smartphone, come già accennato in precedenza, per cui è stato seguito un approccio *mobile-first*. \
+Inoltre, si è seguito uno stile minimale nella progettazione delle schermate, con lo scopo di rendere più facilmente comprensibile all'utilizzatore il ruolo di ciascun componente nell'applicazione. Per lo stesso motivo, sono stati adottati o progettati i componenti grafici cercando di seguire alcuni standard de facto sul web, in modo che l'utente possa facilmente acquisire una certa familiarità con l'applicazione.
+
 ## Dispositivo
