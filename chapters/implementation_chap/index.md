@@ -182,3 +182,34 @@ un visualizzatore di questa mappa nel codice della propria interfaccia grafica.\
 Come già detto, per la realizzazione dell’interfaccia grafica è stato utilizzato il framework Vue, ma esso è stato espanso grazie all’utilizzo di PrimeVue [17], una libreria di componenti pronti all’uso che permettono la realizzazione di un’interfaccia con uno stile moderno, reattivo e di alta qualità. Proprio per questo motivo, essa è utilizzata da molti sviluppatori per la realizzazione di applicazioni web ed è stato deciso di utilizzarla vista la conoscenza da parte del team di sviluppo.
 
 Per quanto riguarda la scelta dei colori dell’applicazione e l’aspetto generale di essa, sono stati seguiti quanto più possibile i principi espressi da Material Design [18] e Typescale [19] che esprimono linee guida e principi per la creazione di interfacce utente intuitive, coerenti e coinvolgenti. Ad esempio, tutte le icone utilizzate provengono dalla libreria di Material Design e la spaziatura degli elementi segue la regola dei terzi minore, considerata un buono standard per la realizzazione di interfacce sia mobile che desktop.
+
+## Dispositivo
+L'implementazione del dispositivo comprende due parti, l'hardware e il firmware. Di seguito verranno spiegate e motivate le scelte di utilizzo.
+
+### Hardware
+Per quanto riguarda la parte fisica del progetto, dopo una attenta analisi dei requisiti e la fase di progettazione, si è deciso di utilizzare i seguenti componenti:
+
+- **ESP32**: un microcontrollore potente e a basso costo, realizzato dalla Espressif Systems, che ha la possibilità di essere programmato in C++ tramite la libreria di Arduino. Uno dei motivi per cui è stato scelto è che ha la possibilità di entrare in diverse modalità di risparmio energetico. 
+
+- **CJMCU-680**: per quanto riguarda i dati ambientali si è deciso di adottare questo modulo che monta un sensore **BME680** prodotto da Bosch Sensortec. È molto versatile perché permette la comunicazione sia I2C che SPI, oltre ad essere di piccole dimensioni ha un prezzo contenuto ed è completo di rilevatore di temperatura, di umidità, di pressione e di qualità dell'aria.
+
+- **E-Paper Display**: vista la necessità di dover risparmiare il più possibile energia e di dover mostrare costantemente delle informazioni, un normale display (es. LCD) non è consigliabile. Per questo è stato scelto un display di tipo Eletronic Paper che mantiene il suo stato anche senza essere alimentato.
+
+### Firmware
+
+Per quanto riguarda l'implementazione del firmware del dispositivo sono state utilizzate principalmente le seguenti tecnologie native dell'ESP32:
+- **Multitasking**: fornito dal *ESP-IDF FreeRTOS*, che ha permesso la creazione di più task concorrenti con la possibilità di legarli a core differenti.
+- **Deep Sleep**: attraverso l'utilizzo di questa tecnologia è stato possibile ottimizzare al massimo il consumo energetico, aumentando notevolmente la durata della carica della batteria e quindi riducendo la necessità di manutenzione. 
+- **RTC**: timer interno all'ESP32 che mantiene le sue funzioni anche quando il dispositivo è in *Deep Sleep*. Inoltre possiede una piccola memoria da 8K che permette di salvare variabili che normalmente andrebbero perse.
+
+#### Librerie utilizzate
+Per lo sviluppo del codice sono state utilizzate diverse librerie per agevolare l'utilizzo dei vari componenti:
+- **SPIFFS**: utilizzata per gestire lo SPIFFS (Serial Peripheral Interface Flash File System) che permette la gestioni di file nella memoria non volatile (Flash).
+ - **Preferences**: utilizzata per salvare in memoria non volatile (Flash) delle variabili che devono rimanere memorizzate anche in caso di un riavvio o di mancata alimentazione.
+ - **BSEC Arduino library**: utilizzata per gestire il sensore BME680.
+ - **QRCodeGenerator**: utilizzata per generare il codice QR.
+ - **ArduinoJson**: utilizzata insieme a SPIFFS per serializzare e deserializzare i dati in file JSON.
+ - **ESPTrueRandom**: utilizzata per generare numeri casuali necessari per la generazione dell'id del dispositivo.
+ - **ESP32Time**: utilizzata per semplificare il salvataggio e l'ottenimento del tempo gestito dall'ESP32.
+ - **TinyGSM**: utilizzata per gestire il GPS, con cui si ottengono data, ora e coordinate geografiche.
+ - **minigrafx**: utilizzata per mostrare a schermo le informazioni che devono essere visualizzate dall'utente.
