@@ -31,7 +31,7 @@ Il codice del device è disponibile su GitHub al seguente link: [Repository Devi
 )
 
 #### Caricare il firmware nel dispositivo
-> :warning: Sono necessari [Python 3.7 o superiore](https://www.python.org/downloads/) e [pip](https://pip.pypa.io/en/stable/installation/)
+> Sono necessari [Python 3.7 o superiore](https://www.python.org/downloads/) e [pip](https://pip.pypa.io/en/stable/installation/)
 
 - Scaricare l'ultima versione del firmware `firmware-X.X.X.bin` dalla [repository](https://github.com/Waypoint-Explorer/device/releases)
 - Aprire il terminale e scaricare `esptool` dal **PyPI** con il comando:
@@ -51,7 +51,7 @@ Il codice del device è disponibile su GitHub al seguente link: [Repository Devi
     - Linux
         ``` 
         esptool.py --port /dev/ttyUSB0 --chip esp32 --baud 921600 --before default_reset --after hard_reset write_flash --compress --flash_mode dout 0x10000 firmware-X.X.X.bin
-
+        ```
 
 ## Componenti del gruppo
 Daniele Gambaletta - <daniele.gambaletta@studio.unibo.it> - 0000924643\
