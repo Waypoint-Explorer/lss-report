@@ -6,7 +6,14 @@ nav_order: 2
 ---
 
 # Architettura di Dettaglio
-Per l'architettura generale del sistema, è stata adottata una suddivisione in due elementi principali: la web app (detta anche explorer app) e il dispositivo (chiamato anche device). Questi elementi saranno successivamente spiegati in dettaglio. Considerando che il sistema è destinato all'uso all'aperto da parte di cittadini e turisti, l'interazione dell'utente con funzionalità come la mappa dei percorsi e la scansione dei codici QR avverrà principalmente attraverso smartphone. Inoltre, è necessario che un dipendente del Comune possa utilizzarlo tramite un computer da ufficio. Per queste ragioni, è stata scelta l'implementazione di un'applicazione web unica, piuttosto che un'app mobile.
+Per avere una visione della struttura generale del sistema, è stato creato un diagramma delle classi (Figura \ref{fig:class-diagram}). Esso modella la suddivisione del sistema negli elementi precedentemente individuati, cercando inoltre di rappresentare le relazioni presenti tra i vari componenti.
+
+<div align="center">
+<img src="../../img/diagramma-classi.png" alt="Diagramma delle classi" >
+<p align="center" id="fig99">[Fig ] Diagramma delle classi</p>
+</div>
+
+Per quanto riguarda il sistema in dettaglio, è stata adottata una suddivisione in due elementi principali, che verranno successivamente approfonditi: la web app (detta anche explorer app) e il dispositivo (chiamato anche device). Considerando che il sistema è destinato all'uso all'aperto da parte di cittadini e turisti, l'interazione dell'utilizzatore con funzionalità come la mappa dei percorsi e la scansione dei codici QR avverrà principalmente attraverso smartphone. Inoltre, è necessario che un dipendente del Comune possa utilizzarlo tramite un computer da ufficio. Per queste ragioni, è stata scelta l'implementazione di un'applicazione web unica, piuttosto che un'app mobile.
 
 ## Web app
 A seguito dell'analisi dei requisiti, capite le esigenze del possibile committente, sono state ideate due architetture del sistema da utilizzare rispettivamente durante la fase di sviluppo interno e durante il deploy del sistema.
