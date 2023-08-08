@@ -189,7 +189,12 @@ L'implementazione del dispositivo comprende due parti, l'hardware e il firmware.
 ### Hardware
 Per quanto riguarda la parte fisica del progetto, dopo una attenta analisi dei requisiti e la fase di progettazione, si è deciso di utilizzare i seguenti componenti:
 
-- **ESP32**: un microcontrollore potente e a basso costo, realizzato dalla Espressif Systems, che ha la possibilità di essere programmato in C++ tramite la libreria di Arduino. Uno dei motivi per cui è stato scelto è che ha la possibilità di entrare in diverse modalità di risparmio energetico. 
+- **ESP32**: un microcontrollore potente e a basso costo, realizzato dalla Espressif Systems, che ha la possibilità di essere programmato in C++ tramite la libreria di Arduino. Uno dei motivi per cui è stato scelto è che ha la possibilità di entrare in diverse modalità di risparmio energetico.  Quella che interessa questo progetto è la modalità *Deep Sleep*, che mantiene attive solo alcune periferiche. In questo modo, quando il dispositivo non è in uso, il consumo energetico è estremamente ridotto, raggiungendo valori dell'ordine dei microampere (uA).
+
+<div align="center">
+<img src="../../img/device-esp32-deep-sleep.png" alt="Architettura dell'ESP32 che mostra i componenti attivi durante la modalità di Deep Sleep (evidenziato in ciano)" style="width: 30rem">
+<p align="center" id="device-deep-sleep">[Fig ] Architettura dell'ESP32 che mostra i componenti attivi durante la modalità di Deep Sleep (evidenziato in ciano)</p>
+</div>
 
 - **CJMCU-680**: per quanto riguarda i dati ambientali si è deciso di adottare questo modulo che monta un sensore **BME680** prodotto da Bosch Sensortec. È molto versatile perché permette la comunicazione sia I2C che SPI, oltre ad essere di piccole dimensioni ha un prezzo contenuto ed è completo di rilevatore di temperatura, di umidità, di pressione e di qualità dell'aria.
 
@@ -197,10 +202,92 @@ Per quanto riguarda la parte fisica del progetto, dopo una attenta analisi dei r
 
 ### Firmware
 
-Per quanto riguarda l'implementazione del firmware del dispositivo sono state utilizzate principalmente le seguenti tecnologie native dell'ESP32:
-- **Multitasking**: fornito dal *ESP-IDF FreeRTOS*, che ha permesso la creazione di più task concorrenti con la possibilità di legarli a core differenti.
-- **Deep Sleep**: attraverso l'utilizzo di questa tecnologia è stato possibile ottimizzare al massimo il consumo energetico, aumentando notevolmente la durata della carica della batteria e quindi riducendo la necessità di manutenzione. 
-- **RTC**: timer interno all'ESP32 che mantiene le sue funzioni anche quando il dispositivo è in *Deep Sleep*. Inoltre possiede una piccola memoria da 8K che permette di salvare variabili che normalmente andrebbero perse.
+Per quanto riguarda l'implementazione del firmware del dispositivo sono state utilizzate principalmente le seguenti tecnologie native dell'ESP32: 
+
+- **Multitasking**: fornito dal *ESP-IDF FreeRTOS*, che ha permesso la     creazione di più task concorrenti con la possibilità di legarli a core differenti, come riportato di seguito:
+    ```cpp
+    xTaskCreatePinnedToCore(updateByTimer, "updateByTimerTask", UPDATE_BY_TIMER_TASK_WORDS, NULL, UPDATE_BY_TIMER_TASK_PRIORITY, &UpdateByTimerTask, CORE_1);
+
+    xTaskCreatePinnedToCore(updateByButton, "updateByButtonTask", UPDATE_BY_BUTTON_TASK_WORDS, NULL, UPDATE_BY_BUTTON_TASK_PRIORITY, &UpdateByButtonTask, CORE_0);
+    ```
+    In questo modo due o più operazione che dovrebbero essere eseguite sequenzialmente vengono eseguite in parallelo, riducendo notevolmente il tempo complessivo e rendendo il dispositivo più usabile per gli utenti.
+
+- **Deep Sleep**: attraverso l'utilizzo di questa tecnologia è stato possibile ottimizzare al massimo il consumo energetico, aumentando notevolmente la durata della carica della batteria e quindi riducendo la necessità di manutenzione. Ci sono diverse modalità con cui si può svegliare il dispositivo dalla *Deep Sleep*. Quelle usate per questo progetto sono la sveglia tramite timer e la sveglia tramite pulsante, come mostrato di seguito.
+    ```cpp
+    // Wake up by timer
+    esp_sleep_enable_timer_wakeup(TIME_TO_SLEEP);
+
+    // Wake up by button pressed
+    esp_sleep_enable_ext0_wakeup(UPDATE_BUTTON, HIGH);
+
+    // Start Deep Sleep
+    esp_deep_sleep_start();
+    ```
+
+    Un'altra funzione fondamentale è stata:
+    ```cpp
+    // Reason of device wakeup
+    wakeupCause = esp_sleep_get_wakeup_cause()
+    ```
+    che permette il riconoscimento della causa che ha svegliato il dispositivo.
+
+- **RTC**: timer interno all'ESP32 che mantiene le sue funzioni anche quando il dispositivo è in *Deep Sleep*. Inoltre possiede una piccola memoria da 8K che permette di salvare variabili che normalmente andrebbero perse. Di seguito un esempio di variabile salvata nella memoria RTC.
+    ```cpp
+    // Var stored in RTC memory
+    RTC_DATA_ATTR uint8_t countGpsRead;
+    ```
+
+#### Diagrammi a blocchi
+Di seguito verranno riportati i diagrammi che descrivono il funzionamento complessivo del sistema.
+
+- **Main**
+    
+    Nell'immagine sotto riportata si può vedere il diagramma che descrive il *Main*, nonché il flusso principale del dispositivo.\
+    All'avvio, nella prima fase inizializza le variabili, ottiene i dati dalla memoria RTC e controlla se il dispositivo è stato svegliato dalla *Deep Sleep*.\
+    Se non lo è, nei primi secondi controlla se viene premuto a lungo il tasto di reset, e nel caso cancella tutti i dati salvati nella flash e riavvia il dispositivo.\
+    Se non viene premuto, allora fa la prima inizializzazione, genera l'id univoco del dispositivo, salva  le informazioni in memoria. Successivamente, cerca di ottenere i dati dal GPS e contemporaneamente genera il task che calibra il sensore. Infine salva tutto in memoria RTC e imposta il prossimo timer del *Deep Sleep*.\
+    Se invece è stato svegliato dalla *Deep Sleep*, legge i dati salvati nella memoria non volatile, genera i due task *UpdateByTimer* e *UpdateByButton*, e attende la loro conclusione.
+    Una volta terminati salva tutti i nuovi dati ottenuti in memoria RTC e imposta il prossimo timer del *Deep Sleep*.
+
+<div align="center">
+<img src="../../img/device-main-task.jpg" alt="Main" style="width: 30rem">
+<p align="center" id="device-main">[Fig ] Main</p>
+</div>
+    
+ - **Update By Timer**
+
+    Nell'immagine sotto riportata si può vedere il diagramma che descrive il task *Update By Timer*, nonché il processo che si occupa dell'aggiornamento periodico dei dati ambientali.\
+    Nella prima fase controlla se la causa per cui il dispositivo è stato svegliato dalla *Deep Sleep* è il timer o è già sveglio ed è il momento di aggiornare i dati.
+    Se così, genera il task di calibrazione del sensore (*CalibrateSensor*) e parallelamente controlla se è necessario ottenere data e ora aggiornati dal GPS.\
+    Una volta atteso la fine del task, salva i nuovi dati ambientali in memoria RTC e se non ci sono errori salva i dati nella memoria non volatile, in ogni caso stampa a schermo i dati rilevati.\
+    Nel caso il dispositivo non sia stato svegliato dalla deep sleep o non sia ancora il momento di aggiornare i dati, continua in loop finchè anche l'altro task parallelo non è terminato *Update By Button* e termina anche'esso.
+
+<div align="center">
+<img src="../../img/device-update-by-timer-task.jpg" alt="Task Update By Timer" style="width: 26rem">
+<p align="center" id="device-update-timer">[Fig ] Task Update By Timer</p>
+</div>
+
+- **Update By Button**
+
+    Nell'immagine sotto riportata si può vedere il diagramma del task *Update By Button*, che si occupa di gestire la pressione del pulsante e la generazione del codice QR.\
+    Similmente al task precedente, controlla se il dispositivo è stato svegliato dalla *Deep Sleep* tramite pulsante o se già sveglio e il pulsante è stato premuto.\
+    Nel caso della pressione del pulsante il dispositivo, prima legge i dati dalla sua memoria non volatile, poi genera il codice QR contenente la stringa di dati. E infine stampa il codice QR a schermo, che rimane visibile per un certo periodo tempo e infine termina.\
+    Nel caso invece che il dispositivo non sia stato svegliato dalla Deep Sleep o che non sia premuto il pulsante, continua in loop finché anche il task textit{Deep Sleep} non è terminato e termina anch'esso.
+
+<div align="center">
+<img src="../../img/device-update-by-button-task.jpg" alt="Task Update By Button" style="width: 26rem">
+<p align="center" id="device-main">[Fig ] Task Update By Button</p>
+</div>
+    
+- **Calibrate Sensor**
+
+    Il task mostrato nella figura sotto è molto semplice e si occupa della calibrazione del sensore. 
+    Non è altro che un ciclo finito per fare in modo che il rilevatore di gas si calibri e questo appunto necessita un determinato numero di letture.
+
+<div align="center">
+<img src="../../img/device-calibrate-sensor-task.jpg" alt="Task Calibrate Sensor" style="width: 17rem">
+<p align="center" id="device-calibrate">[Fig ] Task Calibrate Sensor</p>
+</div>
 
 #### Librerie utilizzate
 Per lo sviluppo del codice sono state utilizzate diverse librerie per agevolare l'utilizzo dei vari componenti:
