@@ -188,7 +188,7 @@ Come da Figura \ref{fig:mockup5}, le informazioni generali sul progetto, una bre
 </div>
 
 <div align="center">
-<img src="../../img/mockup1.png" alt="Pagina navigazione utente" style="width: 26rem">
+<img src="../../img/mockup1.png" alt="Pagina navigazione utente" style="width: 30rem">
 <p align="center" id="fig3">[Figura ] Pagina navigazione utente</p>
 </div>
 
