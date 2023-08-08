@@ -59,7 +59,7 @@ Per rilevare i dati ambientali è invece necessario l'utilizzo di un sensore che
 Essendo appunto scollegato da internet, l'unica maniera che il dispositivo ha di inviare i dati raccolti è tramite lo smartphone dell'utente. Attraverso la scansione del codice QR quindi, deve essere possibile ottenere sia un codice univoco che permette la verifica del fatto che l'utente sia effettivamente passato da quel dispositivo, sia i dati ambientali raccolti fino a quel momento. Per possedere tutte queste informazioni il codice QR deve contenere una stringa di cifre, come mostrato nell'immagine sottostante.
 
 <div align="center">
-<img src="../../img/device-qr-data-packet.jpg" alt="Stringa dati del QR code" >
+<img src="../../img/device-qr-data-packet.jpg" alt="Stringa dati del QR code" style="width:50rem">
 <p align="center" id="qr-data">[Fig ] Stringa dati del QR code</p>
 </div>
 
@@ -79,7 +79,7 @@ Nel dettaglio, il pacchetto è composto da:
 Una volta definito ciò che è necessario per il dispositivo, è stato realizzato il seguente diagramma a blocchi che rappresenta l'architettura generale del sistema.
 
 <div align="center">
-<img src="../../img/device-block-diagram.jpg" alt="Architettura del dispositivo" >
+<img src="../../img/device-block-diagram.jpg" alt="Architettura del dispositivo" style="width: 40rem">
 <p align="center" id="device-block">[Fig ] Architettura del dispositivo</p>
 </div>
 
@@ -98,7 +98,7 @@ Questa architettura rispecchia sia la parte firmware che la parte hardware, infa
 Inoltre è stato realizzato uno schema hardware per definire meglio come i vari componenti sono collegati tra di loro.
 
 <div align="center">
-<img src="../../img/device-scheme.png" alt="Schema collegamenti del dispositivo" >
+<img src="../../img/device-scheme.png" alt="Schema collegamenti del dispositivo" style="width: 34rem">
 <p align="center" id="device-scheme">[Fig ] Schema collegamenti del dispositivo</p>
 </div>
 
@@ -106,7 +106,7 @@ Nell'immagine sotto riportata viene mostrato un modello 3D di come potrebbe esse
 Simile ad una casetta per uccelli, che come tetto ha dei pannelli fotovoltaici e di fronte mostra il display ed il pulsante per ottenere il codice QR da scansionare. Inoltre presenta dei fori laterali per il ricircolo dell'aria.
 
 <div align="center">
-<img src="../../img/device-prototype.png" alt="Modello 3D di un possibile dispositivo" >
+<img src="../../img/device-prototype.png" alt="Modello 3D di un possibile dispositivo" style="width: 28rem">
 <p align="center" id="device-prototype">[Fig ] Modello 3D di un possibile dispositivo</p>
 </div>
 
