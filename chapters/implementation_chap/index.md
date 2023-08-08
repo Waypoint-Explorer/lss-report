@@ -20,31 +20,31 @@ di realizzare all’interno di questo sistema.
     <p align="center" id="fig99">[Fig 28] Tecnologie principali utilizzate nella web app</p>
 </div>
 
-La prima tecnologia utilizzata nell’implementazione del sistema è stata Docker
+La prima tecnologia utilizzata nell’implementazione del sistema è stata *Docker*
 che sin da subito ha permesso, a seguito di una fase iniziale di configurazione, di
 semplificare lo sviluppo del sistema, permettendo ad ogni sviluppatore di avviare
 le proprie istanze dei tre componenti senza dover installare ripetutamente ogni
-componente o libreria esterna utilizzata. La scelta di Docker in particolare è stata
+componente o libreria esterna utilizzata. La scelta di *Docker* in particolare è stata
 effettuata in quanto è sicuramente una delle tecnologie più famose nel suo ambito e
 sono disponibili inoltre diversi registry nel quale caricare e trovare alcune immagini
-Docker già preimpostate per diversi utilizzi. Ad esempio, per l’istanza relativa al database è stata utilizzata l’immagine mongo:4 che ha permesso di utilizzare un
-database MongoDB semplicemente con delle minime configurazioni iniziali.
+*Docker* già preimpostate per diversi utilizzi. Ad esempio, per l’istanza relativa al database è stata utilizzata l’immagine *mongo:4* che ha permesso di utilizzare un
+database *MongoDB* semplicemente con delle minime configurazioni iniziali.
 Come già accennato in precedenza, è stato deciso di utilizzare lo stack di tecnologie MEVN, considerata una delle tre principali scelte nello sviluppo di web app
 moderne. Lo stack MEVN si compone di quattro tecnologie:
-- MongoDB [10] - un database non relazionale, orientato ai documenti, ampiamente utilizzato per gestire grandi quantità di dati in modo flessibile e scalabile. La sua architettura senza schema consente di memorizzare e recuperare dati in formato JSON-like, offrendo flessibilità nella struttura dei documenti. MongoDB supporta operazioni di lettura/scrittura ad alte prestazioni e offre inoltre alcune funzionalità avanzate per garantire la disponibilità e la scalabilità del sistema. Grazie alla sua natura distribuita, MongoDB è in grado di gestire carichi di lavoro ad alta concorrenza e di supportare quindi applicazioni moderne che richiedono una gestione efficiente dei dati.
+- MongoDB <a href="#1">[1]</a> - un database non relazionale, orientato ai documenti, ampiamente utilizzato per gestire grandi quantità di dati in modo flessibile e scalabile. La sua architettura senza schema consente di memorizzare e recuperare dati in formato JSON-like, offrendo flessibilità nella struttura dei documenti. *MongoDB* supporta operazioni di lettura/scrittura ad alte prestazioni e offre inoltre alcune funzionalità avanzate per garantire la disponibilità e la scalabilità del sistema. Grazie alla sua natura distribuita, *MongoDB* è in grado di gestire carichi di lavoro ad alta concorrenza e di supportare quindi applicazioni moderne che richiedono una gestione efficiente dei dati.
 
-- Express [11] - un framework web per Node.js che semplifica lo sviluppo di applicazioni web e API. E’ basato sul concetto di middleware rendendolo quindi modulare aggiungendo funzionalità attraverso l’uso di middleware personalizzati o di terze parti ed offre un modo semplice ed efficiente per gestire richieste e risposte HTTP. Express supporta la gestione delle route,
+- Express <a href="#2">[2]</a> - un framework web per *Node.js* che semplifica lo sviluppo di applicazioni web e API. E’ basato sul concetto di middleware rendendolo quindi modulare aggiungendo funzionalità attraverso l’uso di middleware personalizzati o di terze parti ed offre un modo semplice ed efficiente per gestire richieste e risposte HTTP. Express supporta la gestione delle route,
 la gestione dei parametri delle richieste, la gestione delle sessioni e molto altro. Express è una teconolgia notevolmente diffusa nell’ambito web vista la sua ampia gamma di funzionalità per costruire applicazioni web scalabili e performanti. E’ stato scelto dal team di sviluppo sia per le sue prestazioni che per le esperienze positive riscontrate durante lo sviluppo di progetti
 precedenti
 
-- Vue [12] - un framework JavaScript che permette la creazione di interfacce utente dinamiche e reattive. Oltre ad avere una sintassi piuttosto semplice, uno dei suoi aspetti fondamentali è la possibilità di creare componenti modulari e riutilizzabili per creare applicazioni web complesse in modo efficiente. Vue utilizza un approccio reattivo che consente di gestire ed aggiornare dinamicamente l’interfaccia grafica a seguito di input dell’utente o cambiamenti dei dati che rappresentano lo stato dell’applicazione. Inoltre, Vue permette la realizzazione di web app a pagina singola (single page application), ovvero la realizzazione dell’intera applicazione web all’interno della stessa pagina evitando il caricamento durante la navigazione tra le varie pagine. Questo garantisce un’esperienza più fluida da parte dell’utente con un minore tempo
-di risposta a seguito del primo caricamento iniziale. Per quanto riguarda il frontend di una applicazione web, Vue è sicuramente uno dei framework più utilizzati e la sua scelta è stata sia dovuta alle sue prestazioni e semplicità sia in quanto già utilizzato dal team di sviluppo in passato.
+- Vue.js <a href="#3">[3]</a> - un framework *JavaScript* che permette la creazione di interfacce utente dinamiche e reattive. Oltre ad avere una sintassi piuttosto semplice, uno dei suoi aspetti fondamentali è la possibilità di creare componenti modulari e riutilizzabili per creare applicazioni web complesse in modo efficiente. *Vue* utilizza un approccio reattivo che consente di gestire ed aggiornare dinamicamente l’interfaccia grafica a seguito di input dell’utente o cambiamenti dei dati che rappresentano lo stato dell’applicazione. Inoltre, *Vue* permette la realizzazione di web app a pagina singola (single page application), ovvero la realizzazione dell’intera applicazione web all’interno della stessa pagina evitando il caricamento durante la navigazione tra le varie pagine. Questo garantisce un’esperienza più fluida da parte dell’utente con un minore tempo
+di risposta a seguito del primo caricamento iniziale. Per quanto riguarda il frontend di una applicazione web, *Vue* è sicuramente uno dei framework più utilizzati e la sua scelta è stata sia dovuta alle sue prestazioni e semplicità sia in quanto già utilizzato dal team di sviluppo in passato.
 
-- Node.js [13] - un runtime environmente JavaScript pensato principalmente per eseguire codice JavaScript lato server dove in passato venivano utilizzati altri linguaggi lasciando l’utilizzo JavaScript per l’esecuzione del codice nei client. Node.js offre quindi un ambiente di esecuzione per server scalabile e ad alte prestazioni, utilizzando un modello asincrono basato sugli eventi che consente di gestire un elevato numero di richieste simultaneamente. Questo lo rende particolarmente indicato per applicazioni web che necessitano di tempi di risposta brevi ed è in assoluto una delle tecnologie più utilizzate nello sviluppo web moderno.
+- Node.js <a href="#4">[4]</a> - un runtime environmente *JavaScript* pensato principalmente per eseguire codice *JavaScript* lato server dove in passato venivano utilizzati altri linguaggi lasciando l’utilizzo *JavaScript* per l’esecuzione del codice nei client. *Node.js* offre quindi un ambiente di esecuzione per server scalabile e ad alte prestazioni, utilizzando un modello asincrono basato sugli eventi che consente di gestire un elevato numero di richieste simultaneamente. Questo lo rende particolarmente indicato per applicazioni web che necessitano di tempi di risposta brevi ed è in assoluto una delle tecnologie più utilizzate nello sviluppo web moderno.
 
 Un esempio di utilizzo di queste tecnologie per quanto riguarda il sistema è sicuramente la gestione delle informazioni relative al dominio dell’applicazione. Nel
 seguente listato è riportato un estratto semplificato dello schema di un waypoint
-utilizzato durante l’inizializzazione del database MongoDB per indicare lo schema
+utilizzato durante l’inizializzazione del database *MongoDB* per indicare lo schema
 dei documenti che verranno inseriti.
 
 ```
@@ -73,8 +73,8 @@ const waypoint_schema = {
 ```
 
 A questo schema presente nel database corrisponde uno schema equivalente definito
-nel componente del backend modellato attraverso l’utilizzo di Mongoose[14], una
-libreria di modellazione degli oggetti per Node.js. Nel listato sottostante è presente
+nel componente del backend modellato attraverso l’utilizzo di *Mongoose* <a href="#5">[5]</a>, una
+libreria di modellazione degli oggetti per *Node.js*. Nel listato sottostante è presente
 la modellazione nel backend dello stesso schema che è stato appena mostrato. In
 questo modo, viene semplificata la gestione dei dati ed è possibile effettuare query
 per la creazione, lettura e aggiornamento dei dati usufruendo anche di funzionalità
@@ -101,7 +101,7 @@ const WAYPOINT_SCHEMA = new Schema<Waypoint>({
 });
 ```
 
-Utilizzando in maniera congiunta Express e Mongoose è possibile strutturare dei
+Utilizzando in maniera congiunta *Express* e *Mongoose* è possibile strutturare dei
 gestori delle query nel seguente modo:
 
 ```
@@ -113,7 +113,7 @@ public static readonly findById : RequestHandler = (req: Request, res: Response)
 ```
 
 Nell’esempio precedente è presente l’handler che viene utilizzato quando viene
-effettuata una delle route gestite tramite Express, che in questo caso corrisponde
+effettuata una delle route gestite tramite *Express*, che in questo caso corrisponde
 all’estrazione di uno dei waypoint tramite il suo identificativo:
 
 ```
@@ -167,8 +167,7 @@ get("/redeemed-coupons/user/:userId")
 post("/redeemed-coupons")
 ```
 
-L’effettivo reperimento ed utilizzo dei dati nel frontend dell’applicazione viene effettuato tramite la libreria Axios[15], la quale permette in modo semplice di effettuare delle richeste HTTP e comunicare quindi con un server attraverso la sua API. Axios utilizza le Promise o chiamate async per permettere la computazione asincrona quando si riceve eventualmente la risposta dal server di backend. Ne è un esempio la seguente richiesta, che viene utilizzata per ottenere dal backend tutti i waypoint inseriti nel database. A seguito di una risposta del server è poi possibile utilizzare nel frontend i dati, restituiti direttamente in un formato JSON-like, per
-esempio mostrare tutte le tappe disponibili nel sistema.
+L’effettivo reperimento ed utilizzo dei dati nel frontend dell’applicazione viene effettuato tramite la libreria *Axios* <a href="#6">[6]</a>, la quale permette in modo semplice di effettuare delle richeste HTTP e comunicare quindi con un server attraverso la sua API. *Axios* utilizza le Promise o chiamate async per permettere la computazione asincrona quando si riceve eventualmente la risposta dal server di backend. Ne è un esempio la seguente richiesta, che viene utilizzata per ottenere dal backend tutti i waypoint inseriti nel database. A seguito di una risposta del server è poi possibile utilizzare nel frontend i dati, restituiti direttamente in un formato JSON-like, per esempio mostrare tutte le tappe disponibili nel sistema.
 
 ```
 axios.get("http://${Environment.BACKEND_HOST}/waypoints").then((response) => {
@@ -176,12 +175,12 @@ axios.get("http://${Environment.BACKEND_HOST}/waypoints").then((response) => {
 }) ;
 ```
 
-Una delle caratteristiche principali di questa applicazione è permettere la navigazione degli utenti tra le tappe dei percorsi inseriti dall’amministrazione comunale, ed è per questo che si è pensato di utilizzare delle librerie per la visualizzazione di una mappa, senza la quale il sistema sarebbe stato di difficile utilizzo per gli utenti finali. A tale scopo è stato scelto di utilizzare Mapbox [16], una piattaforma di mappe che fornisce sia una libreria che permette la visualizzazione delle mappe nella propria web app sia servizi di fornitura di mappe interattive e personalizzabili. Attraverso Mapbox è possibile creare una mappa che presenti le informazioni e uno stile personalizzato dallo sviluppatore. In questo caso, è stato creato uno stile su misura che fosse privo quanto più possibile da elementi non inerenti per questo progetto (come ristoranti, altre attività commerciali, etc.) lasciando solamente punti di interesse generale della città (piazze, monumenti, parchi, etc.).\
-Una volta configurato Mapbox, esso restituisce direttamente le map tile (ovvero porzioni di mappa caricate dinamicamente) che presentano lo stile e le informazioni configurate. Attraverso la libreria messa a disposizione è poi semplice integrare
+Una delle caratteristiche principali di questa applicazione è permettere la navigazione degli utenti tra le tappe dei percorsi inseriti dall’amministrazione comunale, ed è per questo che si è pensato di utilizzare delle librerie per la visualizzazione di una mappa, senza la quale il sistema sarebbe stato di difficile utilizzo per gli utenti finali. A tale scopo è stato scelto di utilizzare *Mapbox* <a href="#7">[7]</a>, una piattaforma di mappe che fornisce sia una libreria che permette la visualizzazione delle mappe nella propria web app sia servizi di fornitura di mappe interattive e personalizzabili. Attraverso *Mapbox* è possibile creare una mappa che presenti le informazioni e uno stile personalizzato dallo sviluppatore. In questo caso, è stato creato uno stile su misura che fosse privo quanto più possibile da elementi non inerenti per questo progetto (come ristoranti, altre attività commerciali, etc.) lasciando solamente punti di interesse generale della città (piazze, monumenti, parchi, etc.).\
+Una volta configurato *Mapbox*, esso restituisce direttamente le map tile (ovvero porzioni di mappa caricate dinamicamente) che presentano lo stile e le informazioni configurate. Attraverso la libreria messa a disposizione è poi semplice integrare
 un visualizzatore di questa mappa nel codice della propria interfaccia grafica.\
-Come già detto, per la realizzazione dell’interfaccia grafica è stato utilizzato il framework Vue, ma esso è stato espanso grazie all’utilizzo di PrimeVue [17], una libreria di componenti pronti all’uso che permettono la realizzazione di un’interfaccia con uno stile moderno, reattivo e di alta qualità. Proprio per questo motivo, essa è utilizzata da molti sviluppatori per la realizzazione di applicazioni web ed è stato deciso di utilizzarla vista la conoscenza da parte del team di sviluppo.
+Come già detto, per la realizzazione dell’interfaccia grafica è stato utilizzato il framework *Vue*, ma esso è stato espanso grazie all’utilizzo di *PrimeVue* <a href="#8">[8]</a>, una libreria di componenti pronti all’uso che permettono la realizzazione di un’interfaccia con uno stile moderno, reattivo e di alta qualità. Proprio per questo motivo, essa è utilizzata da molti sviluppatori per la realizzazione di applicazioni web ed è stato deciso di utilizzarla vista la conoscenza da parte del team di sviluppo.
 
-Per quanto riguarda la scelta dei colori dell’applicazione e l’aspetto generale di essa, sono stati seguiti quanto più possibile i principi espressi da Material Design [18] e Typescale [19] che esprimono linee guida e principi per la creazione di interfacce utente intuitive, coerenti e coinvolgenti. Ad esempio, tutte le icone utilizzate provengono dalla libreria di Material Design e la spaziatura degli elementi segue la regola dei terzi minore, considerata un buono standard per la realizzazione di interfacce sia mobile che desktop.
+Per quanto riguarda la scelta dei colori dell’applicazione e l’aspetto generale di essa, sono stati seguiti quanto più possibile i principi espressi da *Material Design* <a href="#9">[9]</a> e *Typescale* <a href="#10">[10]</a> che esprimono linee guida e principi per la creazione di interfacce utente intuitive, coerenti e coinvolgenti. Ad esempio, tutte le icone utilizzate provengono dalla libreria di *Material Design* e la spaziatura degli elementi segue la regola dei terzi minore, considerata un buono standard per la realizzazione di interfacce sia mobile che desktop.
 
 ## Dispositivo
 L'implementazione del dispositivo comprende due parti, l'hardware e il firmware. Di seguito verranno spiegate e motivate le scelte di utilizzo.
@@ -189,7 +188,7 @@ L'implementazione del dispositivo comprende due parti, l'hardware e il firmware.
 ### Hardware
 Per quanto riguarda la parte fisica del progetto, dopo una attenta analisi dei requisiti e la fase di progettazione, si è deciso di utilizzare i seguenti componenti:
 
-- **ESP32**: un microcontrollore potente e a basso costo, realizzato dalla Espressif Systems, che ha la possibilità di essere programmato in C++ tramite la libreria di Arduino. Uno dei motivi per cui è stato scelto è che ha la possibilità di entrare in diverse modalità di risparmio energetico.  Quella che interessa questo progetto è la modalità *Deep Sleep*, che mantiene attive solo alcune periferiche. In questo modo, quando il dispositivo non è in uso, il consumo energetico è estremamente ridotto, raggiungendo valori dell'ordine dei microampere (uA).
+- **ESP32**: un microcontrollore potente e a basso costo, realizzato dalla Espressif Systems, che ha la possibilità di essere programmato in C++ tramite la libreria di Arduino. Uno dei motivi per cui è stato scelto è che ha la possibilità di entrare in diverse modalità di risparmio energetico. Quella che interessa questo progetto è la modalità *Deep Sleep*, che mantiene attive solo alcune periferiche. In questo modo, quando il dispositivo non è in uso, il consumo energetico è estremamente ridotto, raggiungendo valori dell'ordine dei microampere (uA).
 
 <div align="center">
 <img src="../../img/device-esp32-deep-sleep.png" alt="Architettura dell'ESP32 che mostra i componenti attivi durante la modalità di Deep Sleep (evidenziato in ciano)" style="width: 30rem">
@@ -204,7 +203,7 @@ Per quanto riguarda la parte fisica del progetto, dopo una attenta analisi dei r
 
 Per quanto riguarda l'implementazione del firmware del dispositivo sono state utilizzate principalmente le seguenti tecnologie native dell'ESP32: 
 
-- **Multitasking**: fornito dal *ESP-IDF FreeRTOS*, che ha permesso la     creazione di più task concorrenti con la possibilità di legarli a core differenti, come riportato di seguito:
+- **Multitasking**: fornito dal *ESP-IDF FreeRTOS*, che ha permesso la creazione di più task concorrenti con la possibilità di legarli a core differenti, come riportato di seguito:
     ```cpp
     xTaskCreatePinnedToCore(updateByTimer, "updateByTimerTask", UPDATE_BY_TIMER_TASK_WORDS, NULL, UPDATE_BY_TIMER_TASK_PRIORITY, &UpdateByTimerTask, CORE_1);
 
@@ -300,3 +299,25 @@ Per lo sviluppo del codice sono state utilizzate diverse librerie per agevolare 
  - **ESP32Time**: utilizzata per semplificare il salvataggio e l'ottenimento del tempo gestito dall'ESP32.
  - **TinyGSM**: utilizzata per gestire il GPS, con cui si ottengono data, ora e coordinate geografiche.
  - **minigrafx**: utilizzata per mostrare a schermo le informazioni che devono essere visualizzate dall'utente.
+
+## Riferimenti
+
+<a id="1">[1]</a> MongoDB, https://www.mongodb.com/it-it
+
+<a id="2">[2]</a> Express, https://expressjs.com/it/
+
+<a id="3">[3]</a> Vue.js, https://vuejs.org/
+
+<a id="4">[4]</a> Node.js, https://nodejs.org/en
+
+<a id="5">[5]</a> Mongoose, https://mongoosejs.com/
+
+<a id="6">[6]</a> Axios, https://axios-http.com/docs/intro
+
+<a id="7">[7]</a> Mapbox, https://www.mapbox.com/
+
+<a id="8">[8]</a> PrimeVue, https://primevue.org/
+
+<a id="9">[9]</a> Material Design 2, https://m2.material.io/design
+
+<a id="10">[10]</a> Typescale, https://typescale.com/
