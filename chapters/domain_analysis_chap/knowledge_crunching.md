@@ -118,100 +118,110 @@ acquisire una completa comprensione dell'interazione degli utilizzatori con il s
 
 Gli utenti hanno la possibilità di registrarsi o accedere al sistema. Tuttavia, questi passaggi non sono obbligatori per interagire con la mappa. Anche un utente guest può selezionare una località, visualizzare i percorsi disponibili in quella zona e sceglierne uno per avviare l'esplorazione, come schematizzato in <a href="#fig4">Figura 4</a>.
 
-In seguito, una volta raggiunta una tappa indicata nell'applicazione, l'utente interagisce con un marcatore intelligente situato nelle vicinanze del punto di interesse. Premendo un pulsante, il dispositivo genera un codice QR che viene mostrato su un piccolo display e successivamente scansionato dall'utente tramite l'applicazione. In questo modo, il sistema registra il passaggio alla tappa e, se l'utente ha effettuato l'accesso gli viene assegnato il punteggio corrispondente al punto di interesse appena visitato (Figura \ref{fig:user-system2}). Entrando più nel dettaglio del dispositivo, come si può notare da <a href="#fig5">Figura 5</a>, una volta che avviene l'interazione con il visitatore, il codice QR generato dal dispositivo contiene anche i dati ambientali rilevati dai sensori.
+In seguito, una volta raggiunta una tappa indicata nell'applicazione, l'utente interagisce con un marcatore intelligente situato nelle vicinanze del punto di interesse. Premendo un pulsante, il dispositivo genera un codice QR che viene mostrato su un piccolo display e successivamente scansionato dall'utente tramite l'applicazione. In questo modo, il sistema registra il passaggio alla tappa e, se l'utente ha effettuato l'accesso gli viene assegnato il punteggio corrispondente al punto di interesse appena visitato (<a href="#fig5">Figura 5</a>). Entrando più nel dettaglio del dispositivo, come si può notare da <a href="#fig7">Figura 7</a>, una volta che avviene l'interazione con il visitatore, il codice QR generato dal dispositivo contiene anche i dati ambientali rilevati dai sensori.
 
-Una volta completato il percorso, all'utente viene mostrato un riepilogo delle tappe visitate e altre informazioni sull'itinerario appena concluso. Successivamente, se l'utente ha effettuato l'accesso e ha scelto un percorso di particolare rilevanza, gli verranno assegnati ulteriori punti bonus, come da Figura \ref{fig:user-system3}.
+Una volta completato il percorso, all'utente viene mostrato un riepilogo delle tappe visitate e altre informazioni sull'itinerario appena concluso. Successivamente, se l'utente ha effettuato l'accesso e ha scelto un percorso di particolare rilevanza, gli verranno assegnati ulteriori punti bonus, come da <a href="#fig6">Figura 6</a>.
 
 <div align="center">
-<img src="../../img/UsoUtente.svg" alt="Utilizzo sistema parte utente" >
-<p align="center" id="fig4">[Figura 4] Utilizzo sistema parte utente</p>
+<img src="../../img/uso_utente1.png" alt="Interazione dell'utente con il sistema per registrazione, accesso e visualizzazione mappa con percorsi" >
+<p align="center" id="fig4">[Figura 4] Interazione dell'utente con il sistema per registrazione, accesso e visualizzazione mappa con percorsi</p>
 </div>
 
 <div align="center">
-<img src="../../img/Device.svg" alt="Interazione dell'utente con il dispositivo e del dispositivo con i propri sensori e display" >
-<p align="center" id="fig5">[Figura 5] Interazione dell'utente con il dispositivo e del dispositivo con i propri sensori e display</p>
-</div>
-
-Se l'utente ha effettuato l'accesso, può accedere a funzionalità aggiuntive, come la visualizzazione dello storico dei percorsi completati (<a href="#fig6">Figura 6</a>) e la possibilità di convertire i punti accumulati durante i percorsi in coupon sconto (<a href="#fig7">Figura 7</a>).
-
-<div align="center">
-<img src="../../img/VisualizzazioneStoricoPercorsi.svg" alt="Interazione dell'utente con il sistema per visualizzare lo storico dei percorsi" >
-<p align="center" id="fig6">[Figura 6] Interazione dell'utente con il sistema per visualizzare lo storico dei percorsi</p>
+<img src="../../img/uso_utente2.png" alt="Interazione dell'utente con il sistema per validare il passaggio da una tappa" >
+<p align="center" id="fig5">[Figura 5] Interazione dell'utente con il sistema per validare il passaggio da una tappa</p>
 </div>
 
 <div align="center">
-<img src="../../img/AcquistoCoupon.svg" alt="Interazione dell'utente con il sistema per convertire i punti in coupon" >
-<p align="center" id="fig7">[Figura 7] Interazione dell'utente con il sistema per convertire i punti in coupon</p>
+<img src="../../img/uso_utente3.png" alt="Interazione dell'utente con il sistema per visualizzare il riepilogo al termine di un percorso" >
+<p align="center" id="fig6">[Figura 6] Interazione dell'utente con il sistema per visualizzare il riepilogo al termine di un percorso</p>
+</div>
+
+<div align="center">
+<img src="../../img/device.png" alt="Interazione dell'utente con il dispositivo e del dispositivo con i propri sensori e display" >
+<p align="center" id="fig7">[Figura 7] Interazione dell'utente con il dispositivo e del dispositivo con i propri sensori e display</p>
+</div>
+
+Se l'utente ha effettuato l'accesso, può accedere a funzionalità aggiuntive, come la visualizzazione dello storico dei percorsi completati (<a href="#fig8">Figura 8</a>) e la possibilità di convertire i punti accumulati durante i percorsi in coupon sconto (<a href="#fig9">Figura 9</a>).
+
+<div align="center">
+<img src="../../img/riepilogo_utente.png" alt="Interazione dell'utente con il sistema per visualizzare lo storico dei percorsi" >
+<p align="center" id="fig8">[Figura 8] Interazione dell'utente con il sistema per visualizzare lo storico dei percorsi</p>
+</div>
+
+<div align="center">
+<img src="../../img/coupon_utente.png" alt="Interazione dell'utente con il sistema per convertire i punti in coupon" >
+<p align="center" id="fig9">[Figura 9] Interazione dell'utente con il sistema per convertire i punti in coupon</p>
 </div>
 
 L'area dell'amministrazione comunale è visibile solo dopo aver effettuato l'accesso. E' stato scelto di non permettere la registrazione dall'interfaccia utente comune, bensì le credenziali verranno fornite direttamente dai tecnici di competenza.
 
-L'amministrazione si occupa della creazione dei percorsi che vengono suggeriti agli utenti, aggiungendo tappe e relativi marcatori (come da <a href="#fig8">Figura 8</a>). In più, essa può aggiungere coupon sconto donati dagli esercenti del territorio, come schematizzato in <a href="#fig9">Figura 9</a>.
+L'amministrazione si occupa della creazione dei percorsi che vengono suggeriti agli utenti, aggiungendo tappe e relativi marcatori (come da <a href="#fig10">Figura 10</a>). In più, essa può aggiungere coupon sconto donati dagli esercenti del territorio, come schematizzato in <a href="#fig11">Figura 11</a>.
 
 <div align="center">
-<img src="../../img/CreazionePercorso.svg" alt="Interazione dell'amministrazione con il sistema per inserire marcatori, tappe e percorsi e associarli rispettivamente" >
-<p align="center" id="fig8">[Figura 8] Interazione dell'amministrazione con il sistema per inserire marcatori, tappe e percorsi e associarli rispettivamente</p>
+<img src="../../img/percorso_admin.png" alt="Interazione dell'amministrazione con il sistema per inserire marcatori, tappe e percorsi e associarli rispettivamente" >
+<p align="center" id="fig10">[Figura 10] Interazione dell'amministrazione con il sistema per inserire marcatori, tappe e percorsi e associarli rispettivamente</p>
 </div>
 
 <div align="center">
-<img src="../../img/GestioneCoupon.svg" alt="Interazione dell'amministrazione con il sistema per l'inserimento di coupon" >
-<p align="center" id="fig9">[Figura 9] Interazione dell'amministrazione con il sistema per l'inserimento di coupon</p>
+<img src="../../img/coupon_admin.png" alt="Interazione dell'amministrazione con il sistema per l'inserimento di coupon" >
+<p align="center" id="fig11">[Figura 11] Interazione dell'amministrazione con il sistema per l'inserimento di coupon</p>
 </div>
 
-Nell'area amministrazione è possibile richiedere i dati ambientali del territorio, quelli rilevati dai sensori del dispositivo, e le informazioni sullo stato dei device (<a href="#fig10">Figura 10</a> e <a href="#fig11">Figura 11</a>).
+Nell'area amministrazione è possibile richiedere i dati ambientali del territorio, quelli rilevati dai sensori del dispositivo e le informazioni sullo stato dei device (<a href="#fig12">Figura 12</a> e <a href="#fig13">Figura 13</a>).
 
 <div align="center">
-<img src="../../img/VisualizzazioneDatiAmbientali.svg" alt="Interazione dell'amministrazione con il sistema per la visualizzazione dei dati ambientali" >
-<p align="center" id="fig10">[Figura 10] Interazione dell'amministrazione con il sistema per la visualizzazione dei dati ambientali</p>
+<img src="../../img/ambiente_admin.png" alt="Interazione dell'amministrazione con il sistema per la visualizzazione dei dati ambientali" >
+<p align="center" id="fig12">[Figura 12] Interazione dell'amministrazione con il sistema per la visualizzazione dei dati ambientali</p>
 </div>
 
 <div align="center">
-<img src="../../img/VisualizzazioneInformazioniDevice.svg" alt="Interazione dell'amministrazione con il sistema per la visualizzazione delle informazioni sui dispositivi" >
-<p align="center" id="fig11">[Figura 11] Interazione dell'amministrazione con il sistema per la visualizzazione delle informazioni sui dispositivi</p>
+<img src="../../img/device_admin.png" alt="Interazione dell'amministrazione con il sistema per la visualizzazione delle informazioni sui dispositivi" >
+<p align="center" id="fig13">[Figura 13] Interazione dell'amministrazione con il sistema per la visualizzazione delle informazioni sui dispositivi</p>
 </div>
 
-Infine, l'amministrazione comunale può visualizzare le statistiche relative alle visite, in particolare al numero di percorsi effettuati in un determinato periodo di tempo (<a href="#fig12">Figura 12</a>).
+Infine, l'amministrazione comunale può visualizzare le statistiche relative alle visite, in particolare al numero di percorsi effettuati in un determinato periodo di tempo (<a href="#fig14">Figura 14</a>).
 
 <div align="center">
-<img src="../../img/VisualizzazioneStatisticheVisite.svg" alt="Interazione dell'amministrazione con il sistema per la visualizzazione delle statistiche sui percorsi visitati" >
-<p align="center" id="fig12">[Figura 12] Interazione dell'amministrazione con il sistema per la visualizzazione delle statistiche sui percorsi visitati</p>
+<img src="../../img/statistiche_admin.png" alt="Interazione dell'amministrazione con il sistema per la visualizzazione delle statistiche sui percorsi visitati" >
+<p align="center" id="fig14">[Figura 14] Interazione dell'amministrazione con il sistema per la visualizzazione delle statistiche sui percorsi visitati</p>
 </div>
 
 ## Mock-up
 Con lo scopo di avere un'idea più chiara della suddivisione in interfacce delle varie funzionalità richieste e della loro disposizione grafica, insieme al committente sono stati ideati i mockup sotto riportati. 
 
-Come da Figura \ref{fig:mockup5}, le informazioni generali sul progetto, una breve guida utente e un pulsante per iniziare l'esplorazione sono tutte presenti nella pagina iniziale. Attraverso l'interazione con il bottone o tramite menu laterale, ci si sposta nella pagina di navigazione (Figura \ref{fig:mockup1}). In questo punto, può essere scelto il percorso da iniziare tra quelli proposti, aiutandosi con un filtro per categorie di itinerario. La mappa aiuta nella visualizzazione grafica del percorso stesso e delle tappe che lo compongono.
+Come da <a href="#fig15">Figura 15</a>, le informazioni generali sul progetto, una breve guida utente e un pulsante per iniziare l'esplorazione sono tutte presenti nella pagina iniziale. Attraverso l'interazione con il bottone o tramite menu laterale, ci si sposta nella pagina di navigazione (<a href="#fig16">Figura 16</a>). In questo punto, può essere scelto il percorso da iniziare tra quelli proposti, aiutandosi con un filtro per categorie di itinerario. La mappa aiuta nella visualizzazione grafica del percorso stesso e delle tappe che lo compongono.
 
 <div align="center">
 <img src="../../img/mockup5.png" alt="Pagina iniziale" style="width: 20rem">
-<p align="center" id="fig3">[Figura ] Pagina iniziale</p>
+<p align="center" id="fig15">[Figura 15] Pagina iniziale</p>
 </div>
 
 <div align="center">
 <img src="../../img/mockup1.png" alt="Pagina navigazione utente" style="width: 30rem">
-<p align="center" id="fig3">[Figura ] Pagina navigazione utente</p>
+<p align="center" id="fig16">[Figura 16] Pagina navigazione utente</p>
 </div>
 
-Dal lato amministrativo, un dipendente comunale incaricato ha la possibilità di inserire nuovi marcatori nel sistema, che possono essere dispositivi fisici o codici QR stampati. Inoltre, è possibile creare tappe associate a un determinato marcatore e percorsi che comprendono una o più tappe. Questi elementi e le loro relative informazioni possono essere aggiunti in un'unica pagina, come in Figura \ref{fig:mockup6}. Per quanto riguarda le statistiche, è presente una schermata (come Figura \ref{fig:mockup3}) con istogrammi per la visualizzazione del numero di percorsi effettuati dagli utenti in un determinato periodo di tempo.
+Dal lato amministrativo, un dipendente comunale incaricato ha la possibilità di inserire nuovi marcatori nel sistema, che possono essere dispositivi fisici o codici QR stampati. Inoltre, è possibile creare tappe associate a un determinato marcatore e percorsi che comprendono una o più tappe. Questi elementi e le loro relative informazioni possono essere aggiunti in un'unica pagina, come in <a href="#fig17">Figura 17</a>. Per quanto riguarda le statistiche, è presente una schermata (come <a href="#fig18">Figura 18</a>) con istogrammi per la visualizzazione del numero di percorsi effettuati dagli utenti in un determinato periodo di tempo.
 
 <div align="center">
 <img src="../../img/mockup6.png" alt="Pagina amministrazione per inserimento marcatori, tappe, percorsi" style="width: 20rem">
-<p align="center" id="fig3">[Figura ] Pagina amministrazione per inserimento marcatori, tappe, percorsi</p>
+<p align="center" id="fig17">[Figura 17] Pagina amministrazione per inserimento marcatori, tappe, percorsi</p>
 </div>
 
 <div align="center">
 <img src="../../img/mockup3.png" alt="Pagina statistiche amministrazione" style="width: 20rem">
-<p align="center" id="fig3">[Figura ] Pagina statistiche amministrazione</p>
+<p align="center" id="fig18">[Figura 18] Pagina statistiche amministrazione</p>
 </div>
 
-Infine, sono state create due interfacce dedicate alla registrazione di nuovi esploratori (Figura \ref{fig:mockup2}) e all'accesso al sistema da parte degli utenti o degli amministratori (Figura \ref{fig:mockup4}). Queste sono visibili solo quando l'applicazione è in modalità utente ospite, ovvero quando nessun utente ha effettuato l'accesso.
+Infine, sono state create due interfacce dedicate alla registrazione di nuovi esploratori (<a href="#fig19">Figura 19</a>) e all'accesso al sistema da parte degli utenti o degli amministratori (<a href="#fig20">Figura 20</a>). Queste sono visibili solo quando l'applicazione è in modalità utente ospite, ovvero quando nessun utente ha effettuato l'accesso.
 
 <div align="center">
 <img src="../../img/mockup2.png" alt="Pagina registrazione utente" style="width: 20rem">
-<p align="center" id="fig3">[Figura ] Pagina registrazione utente</p>
+<p align="center" id="fig19">[Figura 19] Pagina registrazione utente</p>
 </div>
 
 <div align="center">
 <img src="../../img/mockup4.png" alt="Pagina accesso utente e amministrazione" style="width: 20rem">
-<p align="center" id="fig3">[Figura ] Pagina accesso utente e amministrazione</p>
+<p align="center" id="fig20">[Figura 20] Pagina accesso utente e amministrazione</p>
 </div>
