@@ -25,7 +25,7 @@ Come illustrato in <a href="#device-workflow-build">Figura 1</a> è composto da
 - archiviare il compilato come artefatto delle *GitHub Actions* per renderlo disponibile al download e condivisibile tra i *job*. 
 
 <div align="center">
-<img id="device-workflow-build" src="../../img/device-workflow-build.png" alt="Build workflow"  style="width: 15rem">
+<img id="device-workflow-build" src="../../img/device-workflow-build.jpg" alt="Build workflow"  style="width: 15rem">
 <p align="center">[Figura 1] Build workflow</p>
 </div>
 
@@ -37,7 +37,7 @@ I *job* che vengono eseguiti sono i seguenti:
 3. *Release*: dopo che i *job* precedenti sono stati completati con successo, viene eseguita la *release* su *GitHub Release*. Questa è composta del tag precedentemente creato, l'artefatto caricato dal *workflow* di *Build* e il codice sorgente.
 
 <div align="center">
-<img id="device-workflow-release" src="../../img/device-workflow-release.png" alt="Release workflow" >
+<img id="device-workflow-release" src="../../img/device-workflow-release.jpg" alt="Release workflow" >
 <p align="center" >[Figura 2] Release workflow</p>
 </div>
 
