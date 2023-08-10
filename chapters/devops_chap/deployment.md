@@ -24,6 +24,7 @@ fase di testing iniziale, con un numero di utenti ridotto. Sicuramente, per un u
 (Virtual Private Server) o l’uso di servizi di cloud computing dato che, questo
 approccio garantirebbe, a discapito di un costo maggiore, una serie di benefici
 molto importanti soprattutto in termini di scalabilità è disponibilità.\
+Oltre ai container Docker che realizzano i tre componenti principali del sistema è stato inoltre affiancato un ulteriore container Docker che utilizza un’immagine chiamata Watchtower, il quale permette di aggiornare il sistema in maniera automatica senza alcun intervento esterno anche se il sistema si trova distribuito all’interno di un server remoto.
 
 ## Guida del progetto
 La web app è disponibile su GitHub al seguente link: [Repository Explorer App](https://github.com/Waypoint-Explorer/explorer-app).\
@@ -59,11 +60,11 @@ Il codice del device è disponibile su GitHub al seguente link: [Repository Devi
 - Collegare il dispositivo alla porta USB del computer
 - Caricare il firmware nel dispositivo utilizzando il comando seguente (cambiare il nome del file e la porta seriale):
     - Windows
-        ``` 
+        ```
         esptool.py --port COM4 --chip esp32 --baud 921600 --before default_reset --after hard_reset write_flash --compress --flash_mode dout 0x10000 firmware-X.X.X.bin
         ```
     - Linux
-        ``` 
+        ```
         esptool.py --port /dev/ttyUSB0 --chip esp32 --baud 921600 --before default_reset --after hard_reset write_flash --compress --flash_mode dout 0x10000 firmware-X.X.X.bin
         ```
 
