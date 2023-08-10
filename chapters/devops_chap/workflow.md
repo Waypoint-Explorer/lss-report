@@ -38,3 +38,4 @@ I tipi di commit utilizzati in questo progetto sono i seguenti:
 **docs**: modifiche che riguardano la documentazione del progetto
 
 ## Repository
+Allo scopo di avere una gestione più strutturata del progetto completo è stata creata un'organizzazione GitHub denominata "Waypoint Explorer" la quale ha permesso di isolare in diverse repository il codice relativo a sezioni diverse del progetto. In particolare, sono state create repository relative alla web app, al device e a questa documentazione del progetto permettendo di avere una maggiore indipendenza durante lo sviluppo e mantenendo un confine definito tra le varie parti relative ad aspetti diversi del progetto.
