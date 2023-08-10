@@ -17,6 +17,10 @@ Il sistema prevede l'installazione di dispositivi in corrispondenza dei punti di
 
 Inoltre, l'amministrazione comunale avrà la possibilità di raccogliere informazioni sul territorio attraverso i sensori dei dispositivi, fornendo dati utili per la gestione dell'area e la pianificazione delle attività turistiche. Grazie alla sua scalabilità e alla sua flessibilità, il sistema potrà essere facilmente esteso e adattato alle esigenze specifiche di ogni territorio.
 
+Grazie alla sua flessibilità e scalabilità, il sistema Waypoint Explorer può essere facilmente adattato alle specifiche esigenze di diversi territori e destinazioni turistiche, offrendo opportunità di personalizzazione e adattabilità a livello locale. In questo modo, il progetto si propone di diventare un punto di riferimento per l'innovazione nel settore del turismo e della valorizzazione culturale, contribuendo allo sviluppo sostenibile e all'arricchimento delle esperienze turistiche.
+
+Al fine di comunicare in modo ottimale tali principi, si è optato per la creazione di un <a href="#logo">logo</a> che richiamasse simbolicamente una bussola, simbolo dell'esplorazione. Allo stesso tempo, si è scelto di utilizzare sfumature di verde per sottolineare l'attenzione verso l'ambiente e la sostenibilità.
+
 ## Componenti del gruppo
 Daniele Gambaletta - <daniele.gambaletta@studio.unibo.it> - 0000924643\
 Riccardo Omiccioli - <riccardo.omiccioli@studio.unibo.it> - 0001054475\
