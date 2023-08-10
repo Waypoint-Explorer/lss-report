@@ -11,13 +11,13 @@ nav_order: 7
 Per la realizzazione della web app, progettata per l’interazione degli utenti (siano
 essi guest, esploratori o amministratori), sono state utilizzate numerose tecnologie già presenti sul mercato. L’obiettivo era selezionare la soluzione più adatta
 per ciascuna tecnologia, considerando i requisiti del progetto, la qualità, la diffusione/popolarità della tecnologia e le competenze pregresse degli sviluppatori.\
-L’immagine di Figura 28 riassume le tecnologie più importanti che sono state utilizzate per i tre componenti principali sviluppati. Per ciascuna di esse verranno
+L’immagine di <a href="#fig99">Figura 99</a> riassume le tecnologie più importanti che sono state utilizzate per i tre componenti principali sviluppati. Per ciascuna di esse verranno
 fornite motivazioni della scelta, come sono state utilizzate e cosa hanno permesso
 di realizzare all’interno di questo sistema.
 
 <div align="center">
     <img src="../../img/implementation.png" alt="Tecnologie principali utilizzate nella web app">
-    <p align="center" id="fig99">[Fig 28] Tecnologie principali utilizzate nella web app</p>
+    <p align="center" id="fig99">[Figura 99] Tecnologie principali utilizzate nella web app</p>
 </div>
 
 La prima tecnologia utilizzata nell’implementazione del sistema è stata *Docker*
@@ -188,14 +188,14 @@ L'implementazione del dispositivo comprende due parti, l'hardware e il firmware.
 ### Hardware
 Per quanto riguarda la parte fisica del progetto, dopo una attenta analisi dei requisiti e la fase di progettazione, si è deciso di utilizzare i seguenti componenti:
 
-- **ESP32**: un microcontrollore potente e a basso costo, realizzato dalla Espressif Systems, che ha la possibilità di essere programmato in C++ tramite la libreria di Arduino. Uno dei motivi per cui è stato scelto è che ha la possibilità di entrare in diverse modalità di risparmio energetico. Quella che interessa questo progetto è la modalità *Deep Sleep*, che mantiene attive solo alcune periferiche. In questo modo, quando il dispositivo non è in uso, il consumo energetico è estremamente ridotto, raggiungendo valori dell'ordine dei microampere (uA).
+- **ESP32**: un microcontrollore potente e a basso costo, realizzato dalla Espressif Systems, che ha la possibilità di essere programmato in C++ tramite la libreria di Arduino. Uno dei motivi per cui è stato scelto è che ha la possibilità di entrare in diverse modalità di risparmio energetico. Quella che interessa questo progetto è la modalità *Deep Sleep* <a href="#11">[11]</a>, che mantiene attive solo alcune periferiche, come mostrato in <a href="#device-deep-sleep">Figura 98</a>. In questo modo, quando il dispositivo non è in uso, il consumo energetico è estremamente ridotto, raggiungendo valori dell'ordine dei microampere (uA).
 
 <div align="center">
 <img src="../../img/device-esp32-deep-sleep.png" alt="Architettura dell'ESP32 che mostra i componenti attivi durante la modalità di Deep Sleep (evidenziato in ciano)" style="width: 30rem">
-<p align="center" id="device-deep-sleep">[Fig ] Architettura dell'ESP32 che mostra i componenti attivi durante la modalità di Deep Sleep (evidenziato in ciano)</p>
+<p align="center" id="device-deep-sleep">[Figura 98] Architettura dell'ESP32 che mostra i componenti attivi durante la modalità di Deep Sleep (evidenziato in ciano)</p>
 </div>
 
-- **CJMCU-680**: per quanto riguarda i dati ambientali si è deciso di adottare questo modulo che monta un sensore **BME680** prodotto da Bosch Sensortec. È molto versatile perché permette la comunicazione sia I2C che SPI, oltre ad essere di piccole dimensioni ha un prezzo contenuto ed è completo di rilevatore di temperatura, di umidità, di pressione e di qualità dell'aria.
+- **CJMCU-680**: per quanto riguarda i dati ambientali si è deciso di adottare questo modulo che monta un sensore **BME680** <a href="#12">[12]</a> prodotto da Bosch Sensortec. È molto versatile perché permette la comunicazione sia I2C che SPI, oltre ad essere di piccole dimensioni ha un prezzo contenuto ed è completo di rilevatore di temperatura, di umidità, di pressione e di qualità dell'aria.
 
 - **E-Paper Display**: vista la necessità di dover risparmiare il più possibile energia e di dover mostrare costantemente delle informazioni, un normale display (es. LCD) non è consigliabile. Per questo è stato scelto un display di tipo Eletronic Paper che mantiene il suo stato anche senza essere alimentato.
 
@@ -203,13 +203,13 @@ Per quanto riguarda la parte fisica del progetto, dopo una attenta analisi dei r
 
 Per quanto riguarda l'implementazione del firmware del dispositivo sono state utilizzate principalmente le seguenti tecnologie native dell'ESP32: 
 
-- **Multitasking**: fornito dal *ESP-IDF FreeRTOS*, che ha permesso la creazione di più task concorrenti con la possibilità di legarli a core differenti, come riportato di seguito:
+- **Multitasking**: fornito dal *ESP-IDF FreeRTOS* <a href="#13">[13]</a>, che ha permesso la creazione di più task concorrenti con la possibilità di legarli a core differenti, come riportato di seguito:
     ```cpp
     xTaskCreatePinnedToCore(updateByTimer, "updateByTimerTask", UPDATE_BY_TIMER_TASK_WORDS, NULL, UPDATE_BY_TIMER_TASK_PRIORITY, &UpdateByTimerTask, CORE_1);
 
     xTaskCreatePinnedToCore(updateByButton, "updateByButtonTask", UPDATE_BY_BUTTON_TASK_WORDS, NULL, UPDATE_BY_BUTTON_TASK_PRIORITY, &UpdateByButtonTask, CORE_0);
     ```
-    In questo modo due o più operazione che dovrebbero essere eseguite sequenzialmente vengono eseguite in parallelo, riducendo notevolmente il tempo complessivo e rendendo il dispositivo più usabile per gli utenti.
+    In questo modo due o più operazioni che dovrebbero essere eseguite sequenzialmente vengono eseguite in parallelo, riducendo notevolmente il tempo complessivo e rendendo il dispositivo più usabile per gli utenti.
 
 - **Deep Sleep**: attraverso l'utilizzo di questa tecnologia è stato possibile ottimizzare al massimo il consumo energetico, aumentando notevolmente la durata della carica della batteria e quindi riducendo la necessità di manutenzione. Ci sono diverse modalità con cui si può svegliare il dispositivo dalla *Deep Sleep*. Quelle usate per questo progetto sono la sveglia tramite timer e la sveglia tramite pulsante, come mostrato di seguito.
     ```cpp
@@ -241,7 +241,7 @@ Di seguito verranno riportati i diagrammi che descrivono il funzionamento comple
 
 - **Main**
     
-    Nell'immagine sotto riportata si può vedere il diagramma che descrive il *Main*, nonché il flusso principale del dispositivo.\
+    Nell'immagine sotto riportata (<a href="#device-main">Figura 97</a>) si può vedere il diagramma che descrive il *Main*, nonché il flusso principale del dispositivo.\
     All'avvio, nella prima fase inizializza le variabili, ottiene i dati dalla memoria RTC e controlla se il dispositivo è stato svegliato dalla *Deep Sleep*.\
     Se non lo è, nei primi secondi controlla se viene premuto a lungo il tasto di reset, e nel caso cancella tutti i dati salvati nella flash e riavvia il dispositivo.\
     Se non viene premuto, allora fa la prima inizializzazione, genera l'id univoco del dispositivo, salva  le informazioni in memoria. Successivamente, cerca di ottenere i dati dal GPS e contemporaneamente genera il task che calibra il sensore. Infine salva tutto in memoria RTC e imposta il prossimo timer del *Deep Sleep*.\
@@ -250,54 +250,54 @@ Di seguito verranno riportati i diagrammi che descrivono il funzionamento comple
 
 <div align="center">
 <img src="../../img/device-main-task.jpg" alt="Main" style="width: 30rem">
-<p align="center" id="device-main">[Fig ] Main</p>
+<p align="center" id="device-main">[Figura 97] Main</p>
 </div>
     
  - **Update By Timer**
 
-    Nell'immagine sotto riportata si può vedere il diagramma che descrive il task *Update By Timer*, nonché il processo che si occupa dell'aggiornamento periodico dei dati ambientali.\
+    Nell'immagine sotto riportata (<a href="#device-update-timer">Figura 96</a>) si può vedere il diagramma che descrive il task *Update By Timer*, nonché il processo che si occupa dell'aggiornamento periodico dei dati ambientali.\
     Nella prima fase controlla se la causa per cui il dispositivo è stato svegliato dalla *Deep Sleep* è il timer o è già sveglio ed è il momento di aggiornare i dati.
     Se così, genera il task di calibrazione del sensore (*CalibrateSensor*) e parallelamente controlla se è necessario ottenere data e ora aggiornati dal GPS.\
     Una volta atteso la fine del task, salva i nuovi dati ambientali in memoria RTC e se non ci sono errori salva i dati nella memoria non volatile, in ogni caso stampa a schermo i dati rilevati.\
-    Nel caso il dispositivo non sia stato svegliato dalla deep sleep o non sia ancora il momento di aggiornare i dati, continua in loop finchè anche l'altro task parallelo non è terminato *Update By Button* e termina anche'esso.
+    Nel caso il dispositivo non sia stato svegliato dalla *Deep Sleep* o non sia ancora il momento di aggiornare i dati, continua in loop finchè anche l'altro task parallelo non è terminato *Update By Button* e termina anche'esso.
 
 <div align="center">
 <img src="../../img/device-update-by-timer-task.jpg" alt="Task Update By Timer" style="width: 26rem">
-<p align="center" id="device-update-timer">[Fig ] Task Update By Timer</p>
+<p align="center" id="device-update-timer">[Figura 96] Task Update By Timer</p>
 </div>
 
 - **Update By Button**
 
-    Nell'immagine sotto riportata si può vedere il diagramma del task *Update By Button*, che si occupa di gestire la pressione del pulsante e la generazione del codice QR.\
+    Nell'immagine sotto riportata (<a href="#device-update-by-button">Figura 90</a>) si può vedere il diagramma del task *Update By Button*, che si occupa di gestire la pressione del pulsante e la generazione del codice QR.\
     Similmente al task precedente, controlla se il dispositivo è stato svegliato dalla *Deep Sleep* tramite pulsante o se già sveglio e il pulsante è stato premuto.\
     Nel caso della pressione del pulsante il dispositivo, prima legge i dati dalla sua memoria non volatile, poi genera il codice QR contenente la stringa di dati. E infine stampa il codice QR a schermo, che rimane visibile per un certo periodo tempo e infine termina.\
-    Nel caso invece che il dispositivo non sia stato svegliato dalla Deep Sleep o che non sia premuto il pulsante, continua in loop finché anche il task textit{Deep Sleep} non è terminato e termina anch'esso.
+    Nel caso invece che il dispositivo non sia stato svegliato dalla *Deep Sleep* o che non sia premuto il pulsante, continua in loop finché anche il task *Deep Sleep* non è terminato e termina anch'esso.
 
 <div align="center">
 <img src="../../img/device-update-by-button-task.jpg" alt="Task Update By Button" style="width: 26rem">
-<p align="center" id="device-main">[Fig ] Task Update By Button</p>
+<p align="center" id="device-update-by-button">[Figura 90] Task Update By Button</p>
 </div>
     
 - **Calibrate Sensor**
 
-    Il task mostrato nella figura sotto è molto semplice e si occupa della calibrazione del sensore. 
+    Il task mostrato nella <a href="#device-calibrate">Figura 91</a> è molto semplice e si occupa della calibrazione del sensore. 
     Non è altro che un ciclo finito per fare in modo che il rilevatore di gas si calibri e questo appunto necessita un determinato numero di letture.
 
 <div align="center">
 <img src="../../img/device-calibrate-sensor-task.jpg" alt="Task Calibrate Sensor" style="width: 17rem">
-<p align="center" id="device-calibrate">[Fig ] Task Calibrate Sensor</p>
+<p align="center" id="device-calibrate">[Figura 91] Task Calibrate Sensor</p>
 </div>
 
 #### Librerie utilizzate
 Per lo sviluppo del codice sono state utilizzate diverse librerie per agevolare l'utilizzo dei vari componenti:
-- **SPIFFS**: utilizzata per gestire lo SPIFFS (Serial Peripheral Interface Flash File System) che permette la gestioni di file nella memoria non volatile (Flash).
- - **Preferences**: utilizzata per salvare in memoria non volatile (Flash) delle variabili che devono rimanere memorizzate anche in caso di un riavvio o di mancata alimentazione.
- - **BSEC Arduino library**: utilizzata per gestire il sensore BME680.
- - **QRCodeGenerator**: utilizzata per generare il codice QR.
- - **ArduinoJson**: utilizzata insieme a SPIFFS per serializzare e deserializzare i dati in file JSON.
- - **ESPTrueRandom**: utilizzata per generare numeri casuali necessari per la generazione dell'id del dispositivo.
- - **ESP32Time**: utilizzata per semplificare il salvataggio e l'ottenimento del tempo gestito dall'ESP32.
- - **TinyGSM**: utilizzata per gestire il GPS, con cui si ottengono data, ora e coordinate geografiche.
+- **SPIFFS**: utilizzata per gestire lo SPIFFS (Serial Peripheral Interface Flash File System) che permette la gestioni di file nella memoria non volatile (Flash);
+ - **Preferences**: utilizzata per salvare in memoria non volatile (Flash) delle variabili che devono rimanere memorizzate anche in caso di un riavvio o di mancata alimentazione;
+ - **BSEC Arduino library**: utilizzata per gestire il sensore BME680;
+ - **QRCodeGenerator**: utilizzata per generare il codice QR;
+ - **ArduinoJson**: utilizzata insieme a SPIFFS per serializzare e deserializzare i dati in file JSON;
+ - **ESPTrueRandom**: utilizzata per generare numeri casuali necessari per la generazione dell'id del dispositivo;
+ - **ESP32Time**: utilizzata per semplificare il salvataggio e l'ottenimento del tempo gestito dall'ESP32;
+ - **TinyGSM**: utilizzata per gestire il GPS, con cui si ottengono data, ora e coordinate geografiche;
  - **minigrafx**: utilizzata per mostrare a schermo le informazioni che devono essere visualizzate dall'utente.
 
 ## Riferimenti
@@ -321,3 +321,9 @@ Per lo sviluppo del codice sono state utilizzate diverse librerie per agevolare 
 <a id="9">[9]</a> Material Design 2, https://m2.material.io/design
 
 <a id="10">[10]</a> Typescale, https://typescale.com/
+
+<a id="11">[11]</a> Sleep modes, https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/sleep_modes.html
+
+<a id="12">[12]</a> BME680, https://www.bosch-sensortec.com/products/environmental-sensors/gas-sensors/bme680/
+
+<a id="13">[13]</a> ESP-IDF FreeRTOS, https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/freertos.html
