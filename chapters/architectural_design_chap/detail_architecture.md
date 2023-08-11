@@ -6,7 +6,15 @@ nav_order: 2
 ---
 
 # Architettura di Dettaglio
-Per avere una visione della struttura generale del sistema, è stato creato un diagramma delle classi (<a href="#fig1">Figura 1</a>). Esso modella la suddivisione del sistema negli elementi precedentemente individuati, cercando inoltre di rappresentare le relazioni presenti tra i vari componenti.
+Per avere una visione della struttura generale del sistema, è stato creato un diagramma delle classi (<a href="#fig1">Figura 1</a>). Esso modella la suddivisione del sistema negli elementi precedentemente individuati, cercando inoltre di rappresentare le relazioni presenti tra i vari componenti:
+
+- itinerari: rappresentano l'elemento di livello più alto tra quelli che realizzano i percorsi che gli utenti possono svolgere. Ciascun itinerario ha al suo interno informazioni come nome, descrizione e punti che si ottengono al completamento e può appartenere ad una delle cinque tipologie di itinerari che sono state individuate durante l'analisi. Essi sono in relazione con una o più tappe che corrispondono appunto ai punti di interesse da visitare durante l'itinerario;
+- tappe: si tratta di un elemento che rappresenta i punti di interesse da visitare astraendo però gli aspetti fisici del sistema. E' uno degli elementi più importanti del sistema e mette in relazione gli itinerari proposti con i marcatori disseminati per il territorio di interesse. Al suo interno sono presenti inoltre una serie di informazioni utili agli utenti che sono intenzionati a visitare la tappa;
+- marcatori: modella i marcatori che sono presenti nel territorio ed infatti presentano informazioni come le coordinate geografiche di un marcatore da raggiungere. Si distingue in due sotto elementi, così come anticipato durante la fase di analisi, per rappresentare sia un semplice QR code statico sia un marcatore composto da un dispositivo smart;
+- coupon: è un elemento semplice che modella i coupon di sconto che gli utenti possono riscattare. Ha al suo interno informazioni per descrivere il tipo di offerta, l'azienda che mette a disposizione lo sconto e il numero di punti richiesto per ottenerlo. Nel caso di acquisto da parte di un utente, un coupon è anche associato ad un sotto elemento che modella un codice univoco utilizzabile dall'utente per usufruire dell'offerta;
+- utenti: comprende tre tipologie di utenti divisi in guest, esploratori ed amministratori. Essi si differenziano sia per la loro registrazione o meno al sistema sia per il loro ruolo e l'interazione con gli altri elementi che ne consegue;
+- itinerari completati: rappresenta gli itinerari che sono stati effettuati dagli utenti e il suo scopo è principalmente di fornire un elemento utile per rappresentare lo storico degli utenti e per effettuare alcune analisi da parte degli amministratori;
+- misure ambientali: raccoglie una serie di informazioni registrate dai sensori presenti in un dispositivo. Si è cercato di rendere le misure raccolte il più possibile separate dai dispositivi dai quali provengono in modo da poter essere analizzate agevolmente ed indipendentemente dalla struttura realizzata nel sistema.
 
 <div align="center">
 <img src="../../img/diagramma-classi.png" alt="Diagramma delle classi" >
