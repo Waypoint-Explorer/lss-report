@@ -36,7 +36,7 @@ Nello specifico, è stato utilizzato il numero di PATCH per tracciare bug fix o 
 Durante lo sviluppo, mentre il numero di PATCH e MINOR avevano un riscontro ben chiaro nel codice o nella documentazione di esso, il numero di MAJOR è stato utilizzato solamente per indicare la conclusione dello sviluppo di tutti i requisiti concordati. Qualora il sistema cambi in modo radicale in futuro, comportando modifiche importanti alle sue funzionalità, questo verrebbe comunicato attraverso un incremento del numero MAJOR.
 
 ## Convenzione dei Commit
-Il team di sviluppo ha inoltre adottato l'approccio descritto da *Conventional Commit*. Questa scelta è stata presa sia per rendere facilmente automatizzabile l'incremento del numero di versione, sia per rendere più chiaro lo scopo del codice introdotto durante i commit. Tale obiettivo è stato conseguito strutturando il messaggio di commit secondo il seguente formato: ```<type>[optional scope]: <description>```. Ciascun commit, oltre a includere una descrizione completa di quanto implementato e opzionalmente un riferimento alla porzione del progetto coinvolta nelle modifiche, è anche contrassegnato da un tipo (selezionato tra un elenco di opzioni sotto riportate), ognuna con un significato specifico.\
+Il team di sviluppo ha inoltre adottato l'approccio descritto da *Conventional Commits* <a href="#1">[1]</a>. Questa scelta è stata presa sia per rendere facilmente automatizzabile l'incremento del numero di versione, sia per rendere più chiaro lo scopo del codice introdotto durante i commit. Tale obiettivo è stato conseguito strutturando il messaggio di commit secondo il seguente formato: ```<type>[optional scope]: <description>```. Ciascun commit, oltre a includere una descrizione completa di quanto implementato e opzionalmente un riferimento alla porzione del progetto coinvolta nelle modifiche, è anche contrassegnato da un tipo (selezionato tra un elenco di opzioni sotto riportate), ognuna con un significato specifico.\
 I tipi di commit utilizzati in questo progetto sono i seguenti:
 
 - **chore**: modifiche generiche che non aggiungono funzionalità;
@@ -47,3 +47,8 @@ I tipi di commit utilizzati in questo progetto sono i seguenti:
 
 ## Repository
 Con l'obiettivo di gestire in modo più strutturato e completo l'intero progetto, è stata creata un'organizzazione su *GitHub*, denominata "Waypoint Explorer". Così facendo, è stato possibile suddividere il codice in varie repository, ciascuna delle quali è focalizzata su specifiche parti del progetto. In particolare, sono state create tre repository: una dedicata alla web app, una al dispositivo, una a questa documentazione del progetto. Questa suddivisione ha favorito una maggiore indipendenza nel corso dello sviluppo e il mantenimento di confini ben definiti tra le varie parti relative ad aspetti differenti del progetto.
+
+## Riferimenti
+
+<a id="1">[1]</a> Conventional Commits, https://www.conventionalcommits.org/en/v1.0.0/
+
