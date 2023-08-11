@@ -3,5 +3,5 @@ description: Report for Laboratory of Software Systems course
 remote_theme: pmarsceill/just-the-docs
 color_scheme: "light"
 aux_links:
-  GitHub Organization: https://github.com/Waypoint-Explorer
+  Organizzazione GitHub: https://github.com/Waypoint-Explorer
 search_enabled: false
