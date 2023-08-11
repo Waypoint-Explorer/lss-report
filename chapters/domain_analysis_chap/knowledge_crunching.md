@@ -14,57 +14,57 @@ In più, vorremmo incentivare l'acquisto nei negozi locali, quindi dobbiamo pens
 
 ---
 
-<span style="color: #0078d7">**Analista**</span>: "Cosa intendete come percorso?"\
-<span style="color: #389f48">**Esperto del dominio**</span>: "Un percorso è un itenerario composto da varie tappe. Ogni tappa coincide con un punto di interesse del territorio."
+<span style="color: #0068bd">**Analista**</span>: "Cosa intendete come percorso?"\
+<span style="color: #2e843b">**Esperto del dominio**</span>: "Un percorso è un itenerario composto da varie tappe. Ogni tappa coincide con un punto di interesse del territorio."
 
-<span style="color: #0078d7">**Analista**</span>: "Cosa si intendete per punto di interesse?"\
-<span style="color: #389f48">**Esperto del dominio**</span>: "Un punto di interesse è tutto ciò che detiene un valore significativo per l'amministrazione comunale, tanto da volerlo promuovere come meta di visita: musei, monumenti, piazze, edifici rilevanti, punti panoramici, sentieri, parchi, etc."
+<span style="color: #0068bd">**Analista**</span>: "Cosa si intendete per punto di interesse?"\
+<span style="color: #2e843b">**Esperto del dominio**</span>: "Un punto di interesse è tutto ciò che detiene un valore significativo per l'amministrazione comunale, tanto da volerlo promuovere come meta di visita: musei, monumenti, piazze, edifici rilevanti, punti panoramici, sentieri, parchi, etc."
 
-<span style="color: #0078d7">**Analista**</span>: "Chi e come crea i percorsi?"\
-<span style="color: #389f48">**Esperto del dominio**</span>: "Il Comune si occuperà di decidere quali sono i punti di interesse all'interno del proprio territorio che corrispondono alle tappe dei percorsi. Utilizzando le tappe inserite nel sistema, il Comune può creare dei percorsi suddivisi in categorie che verranno suggeriti ai visitatori, ad esempio percorsi culturali, tematici e naturalistici."
+<span style="color: #0068bd">**Analista**</span>: "Chi e come crea i percorsi?"\
+<span style="color: #2e843b">**Esperto del dominio**</span>: "Il Comune si occuperà di decidere quali sono i punti di interesse all'interno del proprio territorio che corrispondono alle tappe dei percorsi. Utilizzando le tappe inserite nel sistema, il Comune può creare dei percorsi suddivisi in categorie che verranno suggeriti ai visitatori, ad esempio percorsi culturali, tematici e naturalistici."
 
-<span style="color: #0078d7">**Analista**</span>: "Il visitatore dovrà necessariamente seguire per intero un percorso? Potrà interromperlo prima della fine? Potrà visitare altri punti di interesse che non sono all'interno del percorso scelto?"\
-<span style="color: #389f48">**Esperto del dominio**</span>: "No, l'utente potrà scegliere di effettuare solo una parte del percorso scelto, cioè può terminarlo in qualsiasi momento. In più, se dovesse scegliere di aggiungere altre tappe che non sono incluse nel percorso, può farlo liberamente e poi continuare con il percorso scelto inizialmente."
+<span style="color: #0068bd">**Analista**</span>: "Il visitatore dovrà necessariamente seguire per intero un percorso? Potrà interromperlo prima della fine? Potrà visitare altri punti di interesse che non sono all'interno del percorso scelto?"\
+<span style="color: #2e843b">**Esperto del dominio**</span>: "No, l'utente potrà scegliere di effettuare solo una parte del percorso scelto, cioè può terminarlo in qualsiasi momento. In più, se dovesse scegliere di aggiungere altre tappe che non sono incluse nel percorso, può farlo liberamente e poi continuare con il percorso scelto inizialmente."
 
-<span style="color: #0078d7">**Analista**</span>: "Quante tappe ci possono essere in un percorso?"\
-<span style="color: #389f48">**Esperto del dominio**</span>: "In un percorso ci deve essere almeno una tappa, ma non c'è un limite massimo. Nel caso in cui ci siano più tappe in un percorso, queste non hanno un ordine preciso da rispettare."
+<span style="color: #0068bd">**Analista**</span>: "Quante tappe ci possono essere in un percorso?"\
+<span style="color: #2e843b">**Esperto del dominio**</span>: "In un percorso ci deve essere almeno una tappa, ma non c'è un limite massimo. Nel caso in cui ci siano più tappe in un percorso, queste non hanno un ordine preciso da rispettare."
 
-<span style="color: #0078d7">**Analista**</span>: "Come far navigare un utente tra le varie tappe di un percorso?"\
-<span style="color: #389f48">**Esperto del dominio**</span>: "Ci sarà una mappa che mostra i punti di interesse e un itinerario consigliato, ma l'utente è libero di scegliere il tragitto che ritiene più opportuno."
+<span style="color: #0068bd">**Analista**</span>: "Come far navigare un utente tra le varie tappe di un percorso?"\
+<span style="color: #2e843b">**Esperto del dominio**</span>: "Ci sarà una mappa che mostra i punti di interesse e un itinerario consigliato, ma l'utente è libero di scegliere il tragitto che ritiene più opportuno."
 
-<span style="color: #0078d7">**Analista**</span>: "Con quali mezzi di trasporto ci si può spostare tra i vari punti di interesse?"\
-<span style="color: #389f48">**Esperto del dominio**</span>: "Come accennato in precedenza, vogliamo incentivare l'attività fisica o comunque in generale il trasporto sostenibile. Per questo motivo vorremmo che l'utente si spostino a piedi, con mezzi di mobilità attiva (biciletta, skateboard, rollerblade), mezzi di micro mobilità elettrica (monopattini elettrici, biciclette a pedalata assistita, hoverboard e segway) o al massimo con i mezzi pubblici di trasporto."
+<span style="color: #0068bd">**Analista**</span>: "Con quali mezzi di trasporto ci si può spostare tra i vari punti di interesse?"\
+<span style="color: #2e843b">**Esperto del dominio**</span>: "Come accennato in precedenza, vogliamo incentivare l'attività fisica o comunque in generale il trasporto sostenibile. Per questo motivo vorremmo che l'utente si spostino a piedi, con mezzi di mobilità attiva (biciletta, skateboard, rollerblade), mezzi di micro mobilità elettrica (monopattini elettrici, biciclette a pedalata assistita, hoverboard e segway) o al massimo con i mezzi pubblici di trasporto."
 
-<span style="color: #0078d7">**Analista**</span>: "Cosa succede quando un utente termina un percorso?"\
-<span style="color: #389f48">**Esperto del dominio**</span>: "Il visitatore visualizza un riepilogo del percorso appena concluso. Vorremmo che gli utenti registrati possano visualizzare anche a posteriori i percorsi effettuati con le relative informazioni."
+<span style="color: #0068bd">**Analista**</span>: "Cosa succede quando un utente termina un percorso?"\
+<span style="color: #2e843b">**Esperto del dominio**</span>: "Il visitatore visualizza un riepilogo del percorso appena concluso. Vorremmo che gli utenti registrati possano visualizzare anche a posteriori i percorsi effettuati con le relative informazioni."
 
-<span style="color: #0078d7">**Analista**</span>: "Quindi consideriamo che ci possano essere sia utenti registrati che non?"\
-<span style="color: #389f48">**Esperto del dominio**</span>: "Chiunque può utilizzare alcune funzionalità del sistema, cioè visualizzare ed effettuare i percorsi. Se però un utente si registra, ha a disposizione più funzionalità e vantaggi: lo storico dei percorsi e gli sconti. Per la registrazione, bastano username, città di residenza, Stato, anno di nascita, indirizzo e-mail e password di accesso."
+<span style="color: #0068bd">**Analista**</span>: "Quindi consideriamo che ci possano essere sia utenti registrati che non?"\
+<span style="color: #2e843b">**Esperto del dominio**</span>: "Chiunque può utilizzare alcune funzionalità del sistema, cioè visualizzare ed effettuare i percorsi. Se però un utente si registra, ha a disposizione più funzionalità e vantaggi: lo storico dei percorsi e gli sconti. Per la registrazione, bastano username, città di residenza, Stato, anno di nascita, indirizzo e-mail e password di accesso."
 
-<span style="color: #0078d7">**Analista**</span>: "Dato che ha accennato all'incentivare l'acquisto nei negozi locali e sconti, questi ultimi con quale criterio vengono rilasciati?"\
-<span style="color: #389f48">**Esperto del dominio**</span>: "L'utente accumula un certo numero di punti predeterminato per ogni tappa che visita e, completando interamente il percorso, ottiene punti extra. Per incentivarlo a visitare luoghi meno conosciuti o più lontani, questi punti di interesse potrebbero avere un punteggio maggiore. L'utente può utilizzare i punti accumulati per sbloccare dei coupon di sconto per una serie di attività commerciali. Addirittura, potremmo pensare di inserire questo meccanismo per fornire sconti anche per musei o luoghi culturali a pagamento presenti sul territorio."
+<span style="color: #0068bd">**Analista**</span>: "Dato che ha accennato all'incentivare l'acquisto nei negozi locali e sconti, questi ultimi con quale criterio vengono rilasciati?"\
+<span style="color: #2e843b">**Esperto del dominio**</span>: "L'utente accumula un certo numero di punti predeterminato per ogni tappa che visita e, completando interamente il percorso, ottiene punti extra. Per incentivarlo a visitare luoghi meno conosciuti o più lontani, questi punti di interesse potrebbero avere un punteggio maggiore. L'utente può utilizzare i punti accumulati per sbloccare dei coupon di sconto per una serie di attività commerciali. Addirittura, potremmo pensare di inserire questo meccanismo per fornire sconti anche per musei o luoghi culturali a pagamento presenti sul territorio."
 
-<span style="color: #0078d7">**Analista**</span>: "Come pensavate di far accumulare i punti all'utente e come può ottenere i coupon?"\
-<span style="color: #389f48">**Esperto del dominio**</span>: "Dopo che l'utente si è registrato, il sistema memorizza automaticamente il punteggio ottenuto, così che possa visualizzarlo e convertirlo in coupon validi per un singolo utilizzo."
+<span style="color: #0068bd">**Analista**</span>: "Come pensavate di far accumulare i punti all'utente e come può ottenere i coupon?"\
+<span style="color: #2e843b">**Esperto del dominio**</span>: "Dopo che l'utente si è registrato, il sistema memorizza automaticamente il punteggio ottenuto, così che possa visualizzarlo e convertirlo in coupon validi per un singolo utilizzo."
 
-<span style="color: #0078d7">**Analista**</span>: "Visto che ogni tappa rilascia dei punti ai visitatori, avete pensato a come volete controllare che l'utente visiti veramente un punto di interesse?"\
-<span style="color: #389f48">**Esperto del dominio**</span>: "Sì, abbiamo pensato che in ogni luogo si potrebbe installare qualcosa per verificare che l'utente sia veramente passato da quella tappa. Avete in mente delle possibili soluzioni?"\
-<span style="color: #0078d7">**Analista**</span>: "Si potrebbe posizionare un codice QR in ogni punto di interesse e, quando l'utente lo scansiona, viene registrato il suo passaggio."
+<span style="color: #0068bd">**Analista**</span>: "Visto che ogni tappa rilascia dei punti ai visitatori, avete pensato a come volete controllare che l'utente visiti veramente un punto di interesse?"\
+<span style="color: #2e843b">**Esperto del dominio**</span>: "Sì, abbiamo pensato che in ogni luogo si potrebbe installare qualcosa per verificare che l'utente sia veramente passato da quella tappa. Avete in mente delle possibili soluzioni?"\
+<span style="color: #0068bd">**Analista**</span>: "Si potrebbe posizionare un codice QR in ogni punto di interesse e, quando l'utente lo scansiona, viene registrato il suo passaggio."
 
-<span style="color: #389f48">**Esperto del dominio**</span>: "Ora che ne stiamo parlando, sarebbe utile lato amministrativo poter monitorare il numero di visitatori per ogni tappa in un determianto lasso di tempo. In più, essendoci monumenti ad elevato rischio di usura causata dalle condizioni ambientali, c'è per caso modo di installare delle stazioni metereologiche nelle loro vicinanze?"\
-<span style="color: #0078d7">**Analista**</span>: "Potremmo pensare ad una soluzione che integri delle stazioni metereologiche e un display per il codice QR. In questo modo, potremmo generare un codice QR personalizzato per ogni visitatore per evitare che lo riutilizzino per accumulare punti senza veramente visitare la tappa. Avete già delle stazioni metereologiche a disposizione?"\
-<span style="color: #389f48">**Esperto del dominio**</span>: "Non ne abbiamo di preesistenti. Riuscite ad occuparvene voi?"\
-<span style="color: #0078d7">**Analista**</span>: "Certamente. Possiamo creare dei dispositivi che uniscono diversi sensori ambientali al display. Avete ncessità di alcune misurazioni specifiche?"\
-<span style="color: #389f48">**Esperto del dominio**</span>: "Ci interesserebbe ottenere informazioni riguardanti temperatura, umidità, pressione atmosferica e qualità dell'aria."
+<span style="color: #2e843b">**Esperto del dominio**</span>: "Ora che ne stiamo parlando, sarebbe utile lato amministrativo poter monitorare il numero di visitatori per ogni tappa in un determianto lasso di tempo. In più, essendoci monumenti ad elevato rischio di usura causata dalle condizioni ambientali, c'è per caso modo di installare delle stazioni metereologiche nelle loro vicinanze?"\
+<span style="color: #0068bd">**Analista**</span>: "Potremmo pensare ad una soluzione che integri delle stazioni metereologiche e un display per il codice QR. In questo modo, potremmo generare un codice QR personalizzato per ogni visitatore per evitare che lo riutilizzino per accumulare punti senza veramente visitare la tappa. Avete già delle stazioni metereologiche a disposizione?"\
+<span style="color: #2e843b">**Esperto del dominio**</span>: "Non ne abbiamo di preesistenti. Riuscite ad occuparvene voi?"\
+<span style="color: #0068bd">**Analista**</span>: "Certamente. Possiamo creare dei dispositivi che uniscono diversi sensori ambientali al display. Avete ncessità di alcune misurazioni specifiche?"\
+<span style="color: #2e843b">**Esperto del dominio**</span>: "Ci interesserebbe ottenere informazioni riguardanti temperatura, umidità, pressione atmosferica e qualità dell'aria."
 
-<span style="color: #0078d7">**Analista**</span>: "Tutti i punti di interesse scelti dal Comune, hanno una copertura di rete e una fonte di alimentazione per la stazione metereologica?"\
-<span style="color: #389f48">**Esperto del dominio**</span>: "Purtroppo non possiamo assicurare queste caratteristiche, perché alcuni punti di interesse potrebbero trovarsi lontano dai centri abitati e/o immerso nella natura."
+<span style="color: #0068bd">**Analista**</span>: "Tutti i punti di interesse scelti dal Comune, hanno una copertura di rete e una fonte di alimentazione per la stazione metereologica?"\
+<span style="color: #2e843b">**Esperto del dominio**</span>: "Purtroppo non possiamo assicurare queste caratteristiche, perché alcuni punti di interesse potrebbero trovarsi lontano dai centri abitati e/o immerso nella natura."
 
-<span style="color: #0078d7">**Analista**</span>: "Quindi per ogni tappa deve essere presente un dispositivo o possono esserci altri modi per identificare una tappa?"\
-<span style="color: #389f48">**Esperto del dominio**</span>: "Potrebbero esserci dei semplici codici QR stampati, tuttavia, considerando la necessità di un codice univoco per ogni visita al fine di evitare la riutilizzazione dei codici e l'ottenimento dei punti senza effettuare la visita, è possibile ipotizzare che le tappe che utilizzano un QR code stampato non assegnino punti agli utenti."
+<span style="color: #0068bd">**Analista**</span>: "Quindi per ogni tappa deve essere presente un dispositivo o possono esserci altri modi per identificare una tappa?"\
+<span style="color: #2e843b">**Esperto del dominio**</span>: "Potrebbero esserci dei semplici codici QR stampati, tuttavia, considerando la necessità di un codice univoco per ogni visita al fine di evitare la riutilizzazione dei codici e l'ottenimento dei punti senza effettuare la visita, è possibile ipotizzare che le tappe che utilizzano un QR code stampato non assegnino punti agli utenti."
 
-<span style="color: #0078d7">**Analista**</span>: "Ora che abbiamo definito le caratteristiche generali, come vi immaginate il progetto?"\
-<span style="color: #389f48">**Esperto del dominio**</span>: "Pensavamo ad una applicazione del cellulare o ad un sito, visto che gli utenti devono poter utilizzare il servizio da smartphone all'esterno in giro per il territorio. Riassumendo quanto detto fino ad ora, il visitatore deve poter selezionare un percorso, vedere i punti di interesse sulla mappa per potersi orientare, scansionare il codice QR in ogni tappa, utilizzare i punti ottenuti per poter ricevere i coupon di sconto. L'amministrazione comunale deve poter monitorare la frequenza delle visite dei luoghi di interesse, le condizioni ambientali rilevate sul proprio territorio e lo stato delle stazioni metereologiche stesse."
+<span style="color: #0068bd">**Analista**</span>: "Ora che abbiamo definito le caratteristiche generali, come vi immaginate il progetto?"\
+<span style="color: #2e843b">**Esperto del dominio**</span>: "Pensavamo ad una applicazione del cellulare o ad un sito, visto che gli utenti devono poter utilizzare il servizio da smartphone all'esterno in giro per il territorio. Riassumendo quanto detto fino ad ora, il visitatore deve poter selezionare un percorso, vedere i punti di interesse sulla mappa per potersi orientare, scansionare il codice QR in ogni tappa, utilizzare i punti ottenuti per poter ricevere i coupon di sconto. L'amministrazione comunale deve poter monitorare la frequenza delle visite dei luoghi di interesse, le condizioni ambientali rilevate sul proprio territorio e lo stato delle stazioni metereologiche stesse."
 
 ## Diagrammi dei casi d'uso
 A seguito dell'intervista con il committente e delle domande specifiche su alcuni aspetti, sono stati prodotti dei diagrammi dei casi d'uso. Essi hanno aiutato a schematizzare e rendere più chiaro quello che ogni attore del sistema deve poter fare. Essi rappresentano le necessità e le aspettative degli utenti rispetto a come desiderano che il sistema si comporti o quali scopi desiderano che il sistema raggiunga.
