@@ -7,7 +7,7 @@ nav_order: 2
 
 # Analisi del Dominio
 La fase iniziale dello sviluppo del progetto ha coinvolto un'approfondita analisi del dominio in cui il progetto si inserisce. Questa fase ha compreso:
-- **knowlwdge crunching**: inizialmente è stato fatto un incontro con il committente del progetto, che si è immaginato essere il Comune di Ravenna, in cui un rappresentante dell'amministrazione comunale ha presentato l'idea generale del progetto e ha risposto a numerose domande da parte del team.\
+- **knowledge crunching**: inizialmente è stato fatto un incontro con il committente del progetto, che si è immaginato essere il Comune di Ravenna, in cui un rappresentante dell'amministrazione comunale ha presentato l'idea generale del progetto e ha risposto a numerose domande da parte del team.\
 In seguito, durante un'altra riunione con il committente, sono stati stilati una serie di casi d'uso accompagnati da diagrammi, per ottenere la prospettiva di un potenziale utilizzatore del sistema.\
 Inoltre, è stata svolta una sessione di "domain storytelling" con il coinvolgimento del responsabile comunale, così da delineare il flusso d'utilizzo delle varie funzionalità del sistema.\
 Infine, sono stati realizzati i "mock-up" dell'interfaccia grafica per assicurarci di rispettare le preferenze estetiche del committente;

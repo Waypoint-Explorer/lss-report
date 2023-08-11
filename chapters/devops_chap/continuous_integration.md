@@ -6,7 +6,7 @@ nav_order: 2
 ---
 
 # Continuous Integration
-Uno degli aspetti che sono stati presi in considerazione durante le prime fasi implementative è quello riguardante la Continuous Integration per integrare regolamrnete e in maniera automatica il codice prodotto dai membri del team. Utilizzando questo approccio è possibile ridurre drasticamente i conflitti tra le parti di software sviluppate in maniera indipendende dal team permettendo inoltre di rilasciare frequentemente nuove funzionalità ed accorgersi rapidamente dell'eventuale presenza di errori su porzioni di codice molto più piccole e facilmente gestibili. Avendo strutturato lo sviluppo del sistema in maniera incrementale questo risulta molto semplice da applicare ottenendo inoltre preziosi feedback del sistema completo per valutare lo stato complessivo e apportare miglioramenti.
+Uno degli aspetti che sono stati presi in considerazione durante le prime fasi implementative è quello riguardante la Continuous Integration per integrare regolarmente e in maniera automatica il codice prodotto dai membri del team. Utilizzando questo approccio è possibile ridurre drasticamente i conflitti tra le parti di software sviluppate in maniera indipendente dal team permettendo inoltre di rilasciare frequentemente nuove funzionalità ed accorgersi rapidamente dell'eventuale presenza di errori su porzioni di codice molto più piccole e facilmente gestibili. Avendo strutturato lo sviluppo del sistema in maniera incrementale questo risulta molto semplice da applicare ottenendo inoltre preziosi feedback del sistema completo per valutare lo stato complessivo e apportare miglioramenti.
 
 ## GitHub Actions
 Nel corso dello sviluppo di questo progetto, sono state impiegate le GitHub Actions come strumento chiave per il processo di continuous integration consentendo di automatizzare le attività, relative soprattutto alla pubblicazione della documentazione del progetto e al rilascio della web app e del software del device.
@@ -49,7 +49,7 @@ Questo *workflow* viene eseguito solamente quando viene fatta una *push* al bran
 I *job* che vengono eseguiti sono i seguenti:
 1. *Call Build*: richiama il *workflow* di *Build*, precedentemente mostrato;
 2. *Bump Tag*: dopo che è stato completato con successo il *job* di *Build*, si occupa della creazione del *tag*. Attraverso l'utilizzo della *Github Action* *anothrNick/github-tag-action* <a href="#2">[2]</a> è stato possibile formattare in automatico il *tag* rispettando il *Semantic Versioning* utilizzato nel progetto.
-3. *Release*: dopo che i *job* precedenti sono stati completati con successo, viene eseguita la *release* su *GitHub Release*. Questa è composta del tag precedentemente creato, l'artefatto caricato dal *workflow* di *Build* e il codice sorgente.
+3. *Release*: dopo che i *job* precedenti sono stati completati con successo, viene eseguita la *release* su *GitHub Release*. Questa è composta del *tag* precedentemente creato, l'artefatto caricato dal *workflow* di *Build* e il codice sorgente.
 
 <div align="center">
 <img id="device-workflow-release" src="../../img/device-workflow-release.jpg" alt="Release workflow" >
