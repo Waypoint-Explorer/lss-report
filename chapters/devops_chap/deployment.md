@@ -43,7 +43,7 @@ server {
 }
 ```
 
-Nella configurazione sono stati aggiunti due server rispettivamente per il forntend e il backend utilizzando due domini diversi con i quali vengono effettuate le richieste dall'esterno ai rispettivi container docker presenti sul server remoto. In questo caso il mapping delle porte del server utilizza le porte ```3000``` e ```3001``` per il frontend e backend ma è possibile utilizzare una porta qualsiasi e configurare il mapping giusto nel file contenente le variabili d'ambiente di configurazione dei container docker.
+Nella configurazione sono stati aggiunti due server rispettivamente per il frontend e il backend utilizzando due domini diversi con i quali vengono effettuate le richieste dall'esterno ai rispettivi container docker presenti sul server remoto. In questo caso il mapping delle porte del server utilizza le porte ```3000``` e ```3001``` per il frontend e backend ma è possibile utilizzare una porta qualsiasi e configurare il mapping giusto nel file contenente le variabili d'ambiente di configurazione dei container docker.
 
 
 Tenendo a mente che si tratta di un progetto pensato per essere realizzato all’interno di una singola amministrazione comunale, probabilmente un’architettura del genere potrebbe soddisfare in maniera adeguata il numero di utenti che potrebbero utilizzare il sistema. Inoltre, il deploy di questo sistema per un numero contenuto di utenti potrebbe essere effettuato mantenendo un costo molto limitato, considerando soprattutto l’ordine di grandezza del budget messo di solito a disposizione dalle amministrazioni comunali per progetti di questa natura.\

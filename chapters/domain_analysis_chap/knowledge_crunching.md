@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Knowlede Crunching
+title: Knowledge Crunching
 parent: Analisi del Dominio
 nav_order: 1
 ---
 
-# Knowlede Crunching
+# Knowledge Crunching
 ## Intervista con il committente
 
 {: .highlight }
@@ -17,7 +17,7 @@ In più, vorremmo incentivare l'acquisto nei negozi locali, quindi dobbiamo pens
 ---
 
 <span style="color: #0068bd">**Analista**</span>: "Cosa intendete come percorso?"\
-<span style="color: #2e843b">**Esperto del dominio**</span>: "Un percorso è un itenerario composto da varie tappe. Ogni tappa coincide con un punto di interesse del territorio."
+<span style="color: #2e843b">**Esperto del dominio**</span>: "Un percorso è un itinerario composto da varie tappe. Ogni tappa coincide con un punto di interesse del territorio."
 
 <span style="color: #0068bd">**Analista**</span>: "Cosa si intendete per punto di interesse?"\
 <span style="color: #2e843b">**Esperto del dominio**</span>: "Un punto di interesse è tutto ciò che detiene un valore significativo per l'amministrazione comunale, tanto da volerlo promuovere come meta di visita: musei, monumenti, piazze, edifici rilevanti, punti panoramici, sentieri, parchi, etc."
@@ -53,10 +53,10 @@ In più, vorremmo incentivare l'acquisto nei negozi locali, quindi dobbiamo pens
 <span style="color: #2e843b">**Esperto del dominio**</span>: "Sì, abbiamo pensato che in ogni luogo si potrebbe installare qualcosa per verificare che l'utente sia veramente passato da quella tappa. Avete in mente delle possibili soluzioni?"\
 <span style="color: #0068bd">**Analista**</span>: "Si potrebbe posizionare un codice QR in ogni punto di interesse e, quando l'utente lo scansiona, viene registrato il suo passaggio."
 
-<span style="color: #2e843b">**Esperto del dominio**</span>: "Ora che ne stiamo parlando, sarebbe utile lato amministrativo poter monitorare il numero di visitatori per ogni tappa in un determianto lasso di tempo. In più, essendoci monumenti ad elevato rischio di usura causata dalle condizioni ambientali, c'è per caso modo di installare delle stazioni metereologiche nelle loro vicinanze?"\
+<span style="color: #2e843b">**Esperto del dominio**</span>: "Ora che ne stiamo parlando, sarebbe utile lato amministrativo poter monitorare il numero di visitatori per ogni tappa in un determinato lasso di tempo. In più, essendoci monumenti ad elevato rischio di usura causata dalle condizioni ambientali, c'è per caso modo di installare delle stazioni metereologiche nelle loro vicinanze?"\
 <span style="color: #0068bd">**Analista**</span>: "Potremmo pensare ad una soluzione che integri delle stazioni metereologiche e un display per il codice QR. In questo modo, potremmo generare un codice QR personalizzato per ogni visitatore per evitare che lo riutilizzino per accumulare punti senza veramente visitare la tappa. Avete già delle stazioni metereologiche a disposizione?"\
 <span style="color: #2e843b">**Esperto del dominio**</span>: "Non ne abbiamo di preesistenti. Riuscite ad occuparvene voi?"\
-<span style="color: #0068bd">**Analista**</span>: "Certamente. Possiamo creare dei dispositivi che uniscono diversi sensori ambientali al display. Avete ncessità di alcune misurazioni specifiche?"\
+<span style="color: #0068bd">**Analista**</span>: "Certamente. Possiamo creare dei dispositivi che uniscono diversi sensori ambientali al display. Avete necessità di alcune misurazioni specifiche?"\
 <span style="color: #2e843b">**Esperto del dominio**</span>: "Ci interesserebbe ottenere informazioni riguardanti temperatura, umidità, pressione atmosferica e qualità dell'aria."
 
 <span style="color: #0068bd">**Analista**</span>: "Tutti i punti di interesse scelti dal Comune, hanno una copertura di rete e una fonte di alimentazione per la stazione metereologica?"\

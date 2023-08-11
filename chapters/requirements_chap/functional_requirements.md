@@ -58,7 +58,7 @@ I requisiti funzionali sono le specifiche funzionalità e comportamenti che un s
 
 5. effettuare la registrazione di un utente guest
    
-   5.1. effettaure la registrazione inserendo:
+   5.1. effettuare la registrazione inserendo:
      - obbligatori: nome utente, password, email, Paese di residenza
      - facoltativi: città di residenza, anno di nascita
 

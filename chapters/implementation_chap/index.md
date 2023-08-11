@@ -167,7 +167,7 @@ get("/redeemed-coupons/user/:userId")
 post("/redeemed-coupons")
 ```
 
-L’effettivo reperimento ed utilizzo dei dati nel frontend dell’applicazione viene effettuato tramite la libreria *Axios* <a href="#6">[6]</a>, la quale permette in modo semplice di effettuare delle richeste HTTP e comunicare quindi con un server attraverso la sua API. *Axios* utilizza le Promise o chiamate async per permettere la computazione asincrona quando si riceve eventualmente la risposta dal server di backend. Ne è un esempio la seguente richiesta, che viene utilizzata per ottenere dal backend tutti i waypoint inseriti nel database. A seguito di una risposta del server è poi possibile utilizzare nel frontend i dati, restituiti direttamente in un formato JSON-like, per esempio mostrare tutte le tappe disponibili nel sistema.
+L’effettivo reperimento ed utilizzo dei dati nel frontend dell’applicazione viene effettuato tramite la libreria *Axios* <a href="#6">[6]</a>, la quale permette in modo semplice di effettuare delle richieste HTTP e comunicare quindi con un server attraverso la sua API. *Axios* utilizza le Promise o chiamate async per permettere la computazione asincrona quando si riceve eventualmente la risposta dal server di backend. Ne è un esempio la seguente richiesta, che viene utilizzata per ottenere dal backend tutti i waypoint inseriti nel database. A seguito di una risposta del server è poi possibile utilizzare nel frontend i dati, restituiti direttamente in un formato JSON-like, per esempio mostrare tutte le tappe disponibili nel sistema.
 
 ```
 axios.get("http://${Environment.BACKEND_HOST}/waypoints").then((response) => {
