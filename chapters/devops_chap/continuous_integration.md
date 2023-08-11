@@ -21,12 +21,12 @@ Nelle immagini di Figura X e Figura Y vengono ripresi il workflow per la release
 
 <div align="center">
     <img id="device-workflow-build" src="../../img/web-app-workflow.png" alt="Build workflow"  style="width: 50rem">
-    <p align="center">[Figura 1] Web App release workflow</p>
+    <p align="center">[Figura ] Web App release workflow</p>
 </div>
 
 <div align="center">
     <img id="device-workflow-build" src="../../img/frontend-ghcr.png" alt="Build workflow"  style="width: 30rem">
-    <p align="center">[Figura 1] Web App frontend package</p>
+    <p align="center">[Figura ] Web App frontend package</p>
 </div>
 
 
