@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Architettura di Dettaglio
-parent: Design Architetturale
+title: Design di Dettaglio
+parent: Design
 nav_order: 2
 ---
 
-# Architettura di Dettaglio
+# Design di Dettaglio
 Per avere una visione della struttura generale del sistema, è stato creato un diagramma delle classi (<a href="#fig1">Figura 1</a>). Esso modella la suddivisione del sistema negli elementi precedentemente individuati, cercando inoltre di rappresentare le relazioni presenti tra i vari componenti:
 
 - itinerari: rappresentano l'elemento di livello più alto tra quelli che realizzano i percorsi che gli utenti possono svolgere. Ciascun itinerario ha al suo interno informazioni come nome, descrizione e punti che si ottengono al completamento e può appartenere ad una delle cinque tipologie di itinerari che sono state individuate durante l'analisi. Essi sono in relazione con una o più tappe che corrispondono appunto ai punti di interesse da visitare durante l'itinerario;

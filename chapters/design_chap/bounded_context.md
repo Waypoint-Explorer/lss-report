@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Bounded Context
-parent: Design Architetturale
+parent: Design
 nav_order: 1
 ---
 
