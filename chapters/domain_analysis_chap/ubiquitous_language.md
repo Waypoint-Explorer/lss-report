@@ -19,6 +19,11 @@ Da questo punto in avanti, i seguenti termini verranno utilizzati con il signifi
 | tipo marcatore| marker type| il tipo di un marcatore, che può essere un dispositivo o un codice QR
 | dispositivo <br /> (marcatore) | device | un oggetto fisico che integra un display per la visualizzazione di un codice identificativo della tappa (codice QR) e dei sensori per il monitoraggio ambientale (temperatura, umidità, pressione atmosferica e qualità dell'aria). Essendo una tipologia di marcatore, esso è posizionato nelle vicinanze della tappa corrispondente |
 | misurazione| measure| un rilevamento di dati ambientali che comprende le coordinate geografiche, la data e l'orario della rilevazione, insieme a una serie di dati correlati a un fenomeno ambientale |
+| sensore (dispositivo) | environmental sensor | un modulo che converte un fenomeno fisico in un segnale elettrico interpretabile dal dispositivo |
+| dati ambientali (dispositivo) | environmental data | insieme di dati raccolti dal sensore composti da: temperatura, pressione, umidità e qualità dell'aria |
+| - posizione <br /> - GPS <br /> - coordinate geografiche <br /> (dispositivo) | - position <br /> - GPS | coordinate geografiche del dispositivo (latitudine e longitudine) |
+| errori (dispositivo) | errors data | dati di errore per notificare possibili guasti del dispositivo |
+| dati raccolti (dispositivo) | entry data | dati raccolti che comprendono i dati ambientali e la timestamp di quando sono stati rilevati |
 | - codice QR stampato <br /> - marcatore QR | QR marker | un codice QR stampato, quindi statico. Essendo una tipologia di marcatore, esso è posizionato nelle vicinanze della tappa corrispondente |
 | utente guest | guest user  | utilizzatore del sistema che non ha effettuato l'accesso e utilizza le funzionalità di base fornite |
 | esploratore <br /> (utente) | explorer | utente generico che ha effettuato l'accesso al sistema, ma non amministrazione |
