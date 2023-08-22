@@ -30,7 +30,7 @@ Da questo punto in avanti, i seguenti termini verranno utilizzati con il signifi
 | amministratore <br /> (utente) | admin | utente che fa parte dell'amministrazione comunale e che ha effettuato l'accesso al sistema con le credenziali istituzionali |
 | coupon | coupon | offerta che garantisce uno sconto su un prodotto o servizio presso un esercente convenzionato. Per poterlo ottenere, l'utente deve utilizzare i propri punti guadagnati |
 | - codice sconto <br /> - coupon riscattato | redeemed coupon | coupon riscattato dall'utente, cioè un codice monouso |
-| punti | explorer points | valuta virtuale utilizzata all'interno del sistema, si ottengono visitando tappe e completando percorsi, possono essere utilizzati per riscattare dei coupon che hanno lo stesso valore in punti |
+| punti <br/> (esploratore) | current points | valuta virtuale utilizzata all'interno del sistema, si ottengono visitando tappe e completando percorsi, possono essere utilizzati per riscattare dei coupon che hanno lo stesso valore in punti |
 | riscattare| redeem| acquisizione di un codice sconto da parte di un esploratore, utilizzando i propri punti disponibili|
 | nome utente | username | identificativo univoco scelto dall'utente guest durante la registrazione, non necessariamente deve corrispondere al nome vero della persona |
 | culturale <br /> (percorso) | cultural | percorso che include elementi di vario tipo del patrimonio culturale di una zona (teatri, musei, mausolei, tombe, chiese, statue, etc.) |
