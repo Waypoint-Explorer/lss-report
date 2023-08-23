@@ -1,5 +1,7 @@
-title: Waypoint Explorer LSS Report
+title: Waypoint Explorer
 description: Report for Laboratory of Software Systems course
-theme: just-the-docs
+remote_theme: pmarsceill/just-the-docs
 color_scheme: "light"
+aux_links:
+  Organizzazione GitHub: https://github.com/Waypoint-Explorer
 search_enabled: false

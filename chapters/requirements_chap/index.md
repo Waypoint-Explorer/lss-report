@@ -2,8 +2,9 @@
 layout: default
 title: Requisiti
 has_children: true
-nav_order: 4
+nav_order: 3
 ---
 
 # Requisiti
-A seguito dell'intervista con l'esperto del dominio, sono emersi i seguenti requisiti per l'applicativo richiesto. Questi sono stati poi discussi e approvati dal committente.
+Dopo aver condotto un'analisi dettagliata del dominio con il committente del sistema, il team ha ritenuto fondamentale tradurre le richieste raccolte in una forma strutturata, stilando requisiti business, funzionali, non funzionali e implementativi. Tuttavia, la formalizzazione dei requisiti utente non è stata ritenuta necessaria, poiché risultavano già chiari e ben definiti a seguito delle discussioni con il cliente sui casi d'uso del sistema (accompagnati da diagrammi dei casi d'uso).\
+I requisiti stilati sono stati modificati opportunamente e infine validati dal committente. Questa fase è stata necessaria per poter poi procedere con la progettazione dell'architettura e la successiva implementazione.
