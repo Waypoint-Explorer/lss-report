@@ -86,7 +86,7 @@ Nel diagramma in <a href="#fig1">Figura 1</a> sono rappresentati sia i casi d'us
   - visualizza storico percorsi effettuati in precedenza
 
 <div align="center">
-<img src="../../img/usecase-diagram-utente.png" alt="Diagramma dei casi d’uso dell'utente" >
+<img src="../../img/usecase-diagram-utente.png" alt="Diagramma dei casi d’uso dell'utente" style="width: 40rem">
 <p align="center" id="fig1">[Figura 1] Diagramma dei casi d’uso: utente</p>
 </div>
 
@@ -110,7 +110,7 @@ Nel diagramma in <a href="#fig3">Figura 3</a> sono rappresentati i casi d'uso re
 - display:
   - mostra il codice QR relativo ad una determinata tappa
 <div align="center">
-<img src="../../img/usecase-diagram-dispositivo.png" alt="Diagramma dei casi d’uso del dispositivo" >
+<img src="../../img/usecase-diagram-dispositivo.png" alt="Diagramma dei casi d’uso del dispositivo" style="width: 25rem">
 <p align="center" id="fig3">[Figura 3] Diagramma dei casi d’uso: dispositivo</p>
 </div>
 
