@@ -86,7 +86,7 @@ Nel diagramma in <a href="#fig1">Figura 1</a> sono rappresentati sia i casi d'us
   - visualizza storico percorsi effettuati in precedenza
 
 <div align="center">
-<img src="../../img/usecase-diagram-utente.svg" alt="Diagramma dei casi d’uso dell'utente" >
+<img src="../../img/usecase-diagram-utente.png" alt="Diagramma dei casi d’uso dell'utente" >
 <p align="center" id="fig1">[Figura 1] Diagramma dei casi d’uso: utente</p>
 </div>
 
@@ -100,7 +100,7 @@ Nel diagramma in <a href="#fig2">Figura 2</a> sono rappresentati i casi d'uso ch
   - gestisce i coupon degli sconti, cioè inserisce dei possibili coupon da riscattare e decide quanti punti assegnare per ogni tappa
   - visualizza i dati sulle condizioni ambientali rilevati dai sensori
 <div align="center">
-<img src="../../img/usecase-diagram-comune.svg" alt="Diagramma dei casi d’uso dell'amministrazione comunale" >
+<img src="../../img/usecase-diagram-comune.png" alt="Diagramma dei casi d’uso dell'amministrazione comunale" >
 <p align="center" id="fig2">[Figura 2] Diagramma dei casi d’uso: amministrazione comunale</p>
 </div>
 
@@ -110,7 +110,7 @@ Nel diagramma in <a href="#fig3">Figura 3</a> sono rappresentati i casi d'uso re
 - display:
   - mostra il codice QR relativo ad una determinata tappa
 <div align="center">
-<img src="../../img/usecase-diagram-dispositivo.svg" alt="Diagramma dei casi d’uso del dispositivo" >
+<img src="../../img/usecase-diagram-dispositivo.png" alt="Diagramma dei casi d’uso del dispositivo" >
 <p align="center" id="fig3">[Figura 3] Diagramma dei casi d’uso: dispositivo</p>
 </div>
 
