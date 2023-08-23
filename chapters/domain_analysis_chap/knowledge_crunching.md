@@ -141,19 +141,19 @@ Una volta completato il percorso, all'utente viene mostrato un riepilogo delle t
 </div>
 
 <div align="center">
-<img src="../../img/device.png" alt="Interazione dell'utente con il dispositivo e del dispositivo con i propri sensori e display" >
+<img src="../../img/device.svg" alt="Interazione dell'utente con il dispositivo e del dispositivo con i propri sensori e display" >
 <p align="center" id="fig7">[Figura 7] Interazione dell'utente con il dispositivo e del dispositivo con i propri sensori e display</p>
 </div>
 
 Se l'utente ha effettuato l'accesso, può accedere a funzionalità aggiuntive, come la visualizzazione dello storico dei percorsi completati (<a href="#fig8">Figura 8</a>) e la possibilità di convertire i punti accumulati durante i percorsi in coupon sconto (<a href="#fig9">Figura 9</a>).
 
 <div align="center">
-<img src="../../img/riepilogo_utente.png" alt="Interazione dell'utente con il sistema per visualizzare lo storico dei percorsi" >
+<img src="../../img/riepilogo_utente.svg" alt="Interazione dell'utente con il sistema per visualizzare lo storico dei percorsi" >
 <p align="center" id="fig8">[Figura 8] Interazione dell'utente con il sistema per visualizzare lo storico dei percorsi</p>
 </div>
 
 <div align="center">
-<img src="../../img/coupon_utente.png" alt="Interazione dell'utente con il sistema per convertire i punti in coupon" >
+<img src="../../img/coupon_utente.svg" alt="Interazione dell'utente con il sistema per convertire i punti in coupon" >
 <p align="center" id="fig9">[Figura 9] Interazione dell'utente con il sistema per convertire i punti in coupon</p>
 </div>
 
@@ -162,31 +162,31 @@ L'area dell'amministrazione comunale è visibile solo dopo aver effettuato l'acc
 L'amministrazione si occupa della creazione dei percorsi che vengono suggeriti agli utenti, aggiungendo tappe e relativi marcatori (come da <a href="#fig10">Figura 10</a>). In più, essa può aggiungere coupon sconto donati dagli esercenti del territorio, come schematizzato in <a href="#fig11">Figura 11</a>.
 
 <div align="center">
-<img src="../../img/percorso_admin.png" alt="Interazione dell'amministrazione con il sistema per inserire marcatori, tappe e percorsi e associarli rispettivamente" >
+<img src="../../img/percorso_admin.svg" alt="Interazione dell'amministrazione con il sistema per inserire marcatori, tappe e percorsi e associarli rispettivamente" >
 <p align="center" id="fig10">[Figura 10] Interazione dell'amministrazione con il sistema per inserire marcatori, tappe e percorsi e associarli rispettivamente</p>
 </div>
 
 <div align="center">
-<img src="../../img/coupon_admin.png" alt="Interazione dell'amministrazione con il sistema per l'inserimento di coupon" >
+<img src="../../img/coupon_admin.svg" alt="Interazione dell'amministrazione con il sistema per l'inserimento di coupon" >
 <p align="center" id="fig11">[Figura 11] Interazione dell'amministrazione con il sistema per l'inserimento di coupon</p>
 </div>
 
 Nell'area amministrazione è possibile richiedere i dati ambientali del territorio, quelli rilevati dai sensori del dispositivo e le informazioni sullo stato dei device (<a href="#fig12">Figura 12</a> e <a href="#fig13">Figura 13</a>).
 
 <div align="center">
-<img src="../../img/ambiente_admin.png" alt="Interazione dell'amministrazione con il sistema per la visualizzazione dei dati ambientali" >
+<img src="../../img/ambiente_admin.svg" alt="Interazione dell'amministrazione con il sistema per la visualizzazione dei dati ambientali" >
 <p align="center" id="fig12">[Figura 12] Interazione dell'amministrazione con il sistema per la visualizzazione dei dati ambientali</p>
 </div>
 
 <div align="center">
-<img src="../../img/device_admin.png" alt="Interazione dell'amministrazione con il sistema per la visualizzazione delle informazioni sui dispositivi" >
+<img src="../../img/device_admin.svg" alt="Interazione dell'amministrazione con il sistema per la visualizzazione delle informazioni sui dispositivi" >
 <p align="center" id="fig13">[Figura 13] Interazione dell'amministrazione con il sistema per la visualizzazione delle informazioni sui dispositivi</p>
 </div>
 
 Infine, l'amministrazione comunale può visualizzare le statistiche relative alle visite, in particolare al numero di percorsi effettuati in un determinato periodo di tempo (<a href="#fig14">Figura 14</a>).
 
 <div align="center">
-<img src="../../img/statistiche_admin.png" alt="Interazione dell'amministrazione con il sistema per la visualizzazione delle statistiche sui percorsi visitati" >
+<img src="../../img/statistiche_admin.svg" alt="Interazione dell'amministrazione con il sistema per la visualizzazione delle statistiche sui percorsi visitati" >
 <p align="center" id="fig14">[Figura 14] Interazione dell'amministrazione con il sistema per la visualizzazione delle statistiche sui percorsi visitati</p>
 </div>
 
